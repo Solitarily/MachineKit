@@ -2242,7 +2242,7 @@ else
     EMC2_ICON=machinekiticon
     EMC2_TCL_DIR=${prefix}/lib/tcltk/linuxcnc
     EMC2_TCL_LIB_DIR=${prefix}/lib/tcltk/linuxcnc
-    EMC2_LANG_DIR=${prefix}/share/linuxcnc/tcl/msgs
+    EMC2_LANG_DIR=${prefix}/lib/tcltk/linuxcnc/msgs
     EMC2_PO_DIR=${prefix}/share/locale
     EMC2_HELP_DIR=${prefix}/share/doc/linuxcnc
     EMC2_RTLIB_DIR=${prefix}/lib/linuxcnc
