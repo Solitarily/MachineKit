@@ -3329,12 +3329,12 @@ If you have a REALLY large config that you wish to convert to this newer version
                      #print "custom file already exists"
                      writebackup(original)
                      #shutil.copy( original,os.path.expanduser("~/linuxcnc/configs/%s/backups/custom_backup.clp" % self.machinename) ) 
-                     print "made backup of existing custom"
+                     print _("made backup of existing custom")
                   shutil.copy( filename,original)
                   #print "copied ladder program to usr directory"
                   #print"%s" % filename
                 else:
-                     print "Master or temp ladder files missing from configurable_options dir"
+                     print _("Master or temp ladder files missing from configurable_options dir")
         if self.pyvcp and not self.pyvcpexist:                
            panelname = os.path.join(distdir, "configurable_options/pyvcp/%s" % self.pyvcpname)
            originalname = os.path.expanduser("~/linuxcnc/configs/%s/pyvcp-panel.xml" % self.machinename)
@@ -3343,12 +3343,12 @@ If you have a REALLY large config that you wish to convert to this newer version
                      #print "custom PYVCP file already exists"
                      writebackup(originalname)
                      #shutil.copy( originalname,os.path.expanduser("~/linuxcnc/configs/%s/backups/pyvcp-panel_backup.xml" % self.machinename) ) 
-                     print "made backup of existing custom"
+                     print _("made backup of existing custom")
                   shutil.copy( panelname,originalname)
                   #print "copied PYVCP program to usr directory"
                   #print"%s" % panelname
            else:
-                  print "Master PYVCP file: %s missing from configurable_options dir"% self.pyvcpname
+                  print _("Master PYVCP file: %s missing from configurable_options dir")% self.pyvcpname
         file.close()
         self.add_md5sum(filename)
 
@@ -3373,8 +3373,8 @@ If you have a REALLY large config that you wish to convert to this newer version
         print >>file
         if self.number_mesa <> 0:
             for boardnum in range(0,int(self.number_mesa)):
-                print >>file, "Mesa hardware I/O card - board %d is designated as\n"% boardnum,self["mesa%d_currentfirmwaredata"% boardnum][_BOARDTITLE] 
-                print >>file, "with", self["mesa%d_currentfirmwaredata"% boardnum][_MAXGPIO], "I/O pins and firmware is:", self["mesa%d_firmware"% boardnum]
+                print >>file, _("Mesa hardware I/O card - board %d is designated as\n")% boardnum,self["mesa%d_currentfirmwaredata"% boardnum][_BOARDTITLE] 
+                print >>file, "with", self["mesa%d_currentfirmwaredata"% boardnum][_MAXGPIO], _("I/O pins and firmware is:"), self["mesa%d_firmware"% boardnum]
                 print >>file
             for boardnum in range(0,int(self.number_mesa)):
                 for concount,connector in enumerate(self["mesa%d_currentfirmwaredata"% boardnum][_NUMOFCNCTRS]) :
@@ -3548,9 +3548,9 @@ If you have a REALLY large config that you wish to convert to this newer version
         # write AXIS rc file for geometry
         if self.frontend == _AXIS and (self.axisposition[0] or self.axissize[0] or self.axisforcemax):
             filename = os.path.expanduser("~/.axisrc")
-            if App.warning_dialog(app,"Ok to replace AXIS's .axisrc file?\n\
+            if App.warning_dialog(app,_("Ok to replace AXIS's .axisrc file?\n\
  If you haven't added custom commands to this hidden file, outside of pncconf, then this should be fine.\n\
-Choosing no will mean AXIS options such as size/position and force maximum might not be as requested \n",False):
+Choosing no will mean AXIS options such as size/position and force maximum might not be as requested \n"),False):
                 f1 = open(filename, "w")
                 if self.axisposition[0] or self.axissize[0]:
                     #print "Setting AXIS geometry option"
@@ -3737,7 +3737,7 @@ Choosing no will mean AXIS options such as size/position and force maximum might
                 for key,value in type_name.iteritems():
                     if key == ptype: comptype = value
                 if value == "Error":
-                    print "**** ERROR PNCCONF: pintype error in make_pinname: (sserial) ptype = ",ptype
+                    print _("**** ERROR PNCCONF: pintype error in make_pinname: (sserial) ptype = "),ptype
                     return None
                 # if gpionumber flag is true - convert to gpio pin name
                 if gpionumber or ptype in(GPIOI,GPIOO,GPIOD):
@@ -3767,7 +3767,7 @@ Choosing no will mean AXIS options such as size/position and force maximum might
                             comptype = "input"
                         return "hm2_%s.%d.%s.%d.%d."% (boardname,halboardnum,subboardname,portnum,channel) + comptype+"-%02d"% (pinnum)
                     else:
-                        print "**** ERROR PNCCONF: subboard name ",subboardname," in make_pinname: (sserial) ptype = ",ptype,pin
+                        print _("**** ERROR PNCCONF: subboard name ",subboardname," in make_pinname: (sserial) ptype = "),ptype,pin
                         return None
                 elif ptype in (AMP8I20,POTO,POTE,POTD) or prefixonly:
                     return "hm2_%s.%d.%s.%d.%d."% (boardname,halboardnum,subboardname,portnum,channel)
@@ -3784,7 +3784,7 @@ Choosing no will mean AXIS options such as size/position and force maximum might
                     comptype = "enc"
                     return "hm2_%s.%d.%s.%d.%d."% (boardname,halboardnum,subboardname,portnum,channel) + comptype+"%d"% (compnum)
                 else:
-                    print "**** ERROR PNCCONF: pintype error in make_pinname: (sserial) ptype = ",ptype,pin
+                    print _("**** ERROR PNCCONF: pintype error in make_pinname: (sserial) ptype = "),ptype,pin
                     return None
             else:
                 # sample pin name = mesa0c3pin1
@@ -3801,7 +3801,7 @@ Choosing no will mean AXIS options such as size/position and force maximum might
                 for key,value in type_name.iteritems():
                     if key == ptype: comptype = value
                 if value == "Error":
-                    print "**** ERROR PNCCONF: pintype error in make_pinname: (mesa) ptype = ",ptype
+                    print _("**** ERROR PNCCONF: pintype error in make_pinname: (mesa) ptype = "),ptype
                     return None
                 # if gpionumber flag is true - convert to gpio pin name
                 if gpionumber or ptype in(GPIOI,GPIOO,GPIOD):
@@ -3835,7 +3835,7 @@ Choosing no will mean AXIS options such as size/position and force maximum might
             if pintype == 'I': ending = "-in"
             return "parport."+str(connum)+".pin-%02d"%(pinnum)+ending
         else:
-            print "pintype error in make_pinname: pinname = ",test
+            print _("pintype error in make_pinname: pinname = "),test
             return None
 
 class App:
@@ -3965,7 +3965,7 @@ class App:
         align.show()
 
         self.pbar = gtk.ProgressBar()
-        self.pbar.set_text("Pncconf is setting up")
+        self.pbar.set_text(_("Pncconf is setting up"))
         self.pbar.set_fraction(.1)
 
         align.add(self.pbar)
@@ -4143,10 +4143,10 @@ class App:
                         try:
                             execfile(rcfile)
                         except:
-                            print "**** PNCCONF ERROR:    custom firmware loading error"
+                            print _("**** PNCCONF ERROR:    custom firmware loading error")
                             custommesafirmwaredata = []
                     if not custommesafirmwaredata == []:
-                        print "**** PNCCONF INFO:    Found extra firmware in file"
+                        print _("**** PNCCONF INFO:    Found extra firmware in file")
         self.widgets.createsymlink.set_active(link)
         self.widgets.createshortcut.set_active(short)
 
@@ -4490,7 +4490,7 @@ Ok to reset data and start a new configuration?"),False):
     def mesa_firmware_search(self,boardtitle,*args):
         #TODO if no firm packages set up for internal data?
         #TODO don't do this if the firmware is already loaded
-        self.pbar.set_text("Loading external firmware")
+        self.pbar.set_text(_("Loading external firmware"))
         self.pbar.set_fraction(0)
         self.window.show()
         while gtk.events_pending():
@@ -4562,7 +4562,7 @@ Ok to reset data and start a new configuration?"),False):
                 elif k in ("IOPort","AddrX","MuxedQCountSel"):
                     continue
                 else:
-                    print "**** WARNING: Pncconf parsing firmware: tagname (%s) not reconized"% k
+                    print _("**** WARNING: Pncconf parsing firmware: tagname (%s) not reconized")% k
     
             pins = root.findall("//pins")[0]
             temppinlist = []
@@ -4785,12 +4785,12 @@ Ok to reset data and start a new configuration?"),False):
         text = []
         sourcefile = "/tmp/"
         if os.path.exists("/etc/udev/rules.d/50-LINUXCNC-general.rules"):
-            text.append( "General rule already exists\n")
+            text.append( _("General rule already exists\n"))
         else:
-            text.append("adding a general rule first\nso your device will be found\n")
+            text.append(_("adding a general rule first\nso your device will be found\n"))
             filename = os.path.join(sourcefile, "LINUXCNCtempGeneral.rules")
             file = open(filename, "w")
-            print >>file, ("# This is a rule for LinuxCNC's hal_input\n")
+            print >>file, (_("# This is a rule for LinuxCNC's hal_input\n"))
             print >>file, ("""SUBSYSTEM="input", MODE="0660", GROUP="plugdev" """) 
             file.close()
             p=os.popen("gksudo cp  %sLINUXCNCtempGeneral.rules /etc/udev/rules.d/50-LINUXCNC-general.rules"% sourcefile )
@@ -4802,7 +4802,7 @@ Ok to reset data and start a new configuration?"),False):
         if not self.warning_dialog("\n".join(text),False):return
 
         os.popen('less /proc/bus/input/devices >> %sLINUXCNCnojoytemp.txt'% sourcefile)
-        text = ["Plug in USB device please"]
+        text = [_("Plug in USB device please")]
         if not self.warning_dialog("\n".join(text),False):return
         time.sleep(1)
 
@@ -4813,7 +4813,7 @@ Ok to reset data and start a new configuration?"),False):
         os.remove('%sLINUXCNCnojoytemp.txt'% sourcefile)
         os.remove('%sLINUXCNCjoytemp.txt'% sourcefile)
         if diff =="":
-            text = ["No new USB device found"]
+            text = [_("No new USB device found")]
             if not self.warning_dialog("\n".join(text),True):return
         else:
             textbuffer = self.widgets.textoutput.get_buffer()
@@ -4822,7 +4822,7 @@ Ok to reset data and start a new configuration?"),False):
                 self.widgets.helpnotebook.set_current_page(2)
                 self.widgets.helpwindow.show_all()
             except:
-                text = _("USB device  page is unavailable\n")
+                text = _(_("USB device  page is unavailable\n"))
                 self.warning_dialog(text,True)
             linelist = diff.split("\n")
             for i in linelist:
@@ -4844,8 +4844,8 @@ Ok to reset data and start a new configuration?"),False):
             if not self.warning_dialog("\n".join(text),False):return
             tempname = sourcefile+"LINUXCNCtempspecific.rules"
             file = open(tempname, "w")
-            print >>file, ("# This is a rule for LINUXCNC's hal_input\n")
-            print >>file, ("# For devicename=%s\n"% name)
+            print >>file, (_("# This is a rule for LINUXCNC's hal_input\n"))
+            print >>file, (_("# For devicename=%s\n")% name)
             print >>file, ("""SYSFS{idProduct}=="%s", SYSFS{idVendor}=="%s", MODE="0660", GROUP="plugdev" """%(product,vendor)) 
             file.close()
             # remove illegal filename characters
@@ -4856,7 +4856,7 @@ Ok to reset data and start a new configuration?"),False):
             os.popen("gksudo cp  %s /etc/udev/rules.d/%s"% (tempname,newname) )
             time.sleep(1)
             os.remove('%sLINUXCNCtempspecific.rules'% sourcefile)
-            text = ["Please unplug and plug in your device again"]
+            text = [_("Please unplug and plug in your device again")]
             if not self.warning_dialog("\n".join(text),True):return
 
     def on_joysticktest_clicked(self, *args):
@@ -4865,9 +4865,9 @@ Ok to reset data and start a new configuration?"),False):
         halrun.stdin.write("loadusr hal_input -W -KRAL +%s\n"% self.widgets.usbdevicename.get_text())
         halrun.stdin.write("loadusr halmeter -g 0 500\n")
         time.sleep(1.5)
-        halrun.stdin.write("show pin\n")
-        self.warning_dialog("Close me When done.\n",True)
-        halrun.stdin.write("exit\n")
+        halrun.stdin.write(_("show pin\n"))
+        self.warning_dialog(_("Close me When done.\n"),True)
+        halrun.stdin.write(_("exit\n"))
         output = halrun.communicate()[0]
         temp2 = output.split(" ")
         temp=[]
@@ -4887,13 +4887,13 @@ Ok to reset data and start a new configuration?"),False):
             self.widgets.helpnotebook.set_current_page(2)
             self.widgets.helpwindow.show_all()
         except:
-            text = _("Pin names are unavailable\n")
+            text = _(_("Pin names are unavailable\n"))
             self.warning_dialog(text,True)
 
     def on_joysearch_clicked(self, *args):
         flag = False
         textbuffer = self.widgets.textoutput.get_buffer()
-        textbuffer.set_text("Searching for device rules in folder:    /etc/udev/rules.d\n\n")
+        textbuffer.set_text(_("Searching for device rules in folder:    /etc/udev/rules.d\n\n"))
         for entry in os.listdir("/etc/udev/rules.d"):
             if fnmatch.fnmatch( entry,"50-LINUXCNC-*"):
                 temp = open("/etc/udev/rules.d/" + entry, "r").read()
@@ -4904,15 +4904,15 @@ Ok to reset data and start a new configuration?"),False):
                         temp = i.split("=")
                         name = temp[1]
                         try:
-                            textbuffer.insert_at_cursor( "File name:    %s\n"% entry)
-                            textbuffer.insert_at_cursor( "Device name:    %s\n\n"% name)
+                            textbuffer.insert_at_cursor( _("File name:    %s\n")% entry)
+                            textbuffer.insert_at_cursor( _("Device name:    %s\n\n")% name)
                             self.widgets.helpnotebook.set_current_page(2)
                             self.widgets.helpwindow.show_all()
                         except:
-                            text = _("Device names are unavailable\n")
+                            text = _(_("Device names are unavailable\n"))
                             self.warning_dialog(text,True)
         if flag == False:
-            text = _("No Pncconf made device rules were found\n")
+            text = _(_("No Pncconf made device rules were found\n"))
             textbuffer.insert_at_cursor(text)
             self.warning_dialog(text,True)
 
@@ -5428,7 +5428,7 @@ Clicking 'existing custom program' will aviod this warning. "),False):
                 # this suppresses errors because of unused and unintialized sserial instances
                 elif pintype == None and "sserial" in ptype: return
                 else :
-                    print "**** ERROR mesa-data-transfer: error unknown pin type:",pintype,"of ",ptype
+                    print _("**** ERROR mesa-data-transfer: error unknown pin type:"),pintype,"of ",ptype
                     return
                 
                 # **Start widget to data Convertion**                    
@@ -5441,7 +5441,7 @@ Clicking 'existing custom program' will aviod this warning. "),False):
                         selection = self.widgets[p].get_active_text()
                         piter = self.widgets[p].get_active_iter()
                         if piter == None:
-                            print "****ERROR PNCCONF: no custom name available"
+                            print _("****ERROR PNCCONF: no custom name available")
                             return
                         #print "found signame -> ",selection," "
                 # ok we have a piter with a signal type now- lets convert it to a signalname
@@ -5646,7 +5646,7 @@ I hesitate to even allow it's use but at times it's very useful.\nDo you wish to
                         display = 2
                         relatedliststore = self.data._udmrelatedliststore
                         controlliststore = self.data._udmcontrolliststore
-                    else:print "**** WARNING PNCCONF: pintype error-PWM type not found";return
+                    else:print _("**** WARNING PNCCONF: pintype error-PWM type not found");return
                     self.widgets[ptype].handler_block(self.data[ptypeblocksignal])
                     self.widgets[ptype].set_model(controlliststore)
                     self.widgets[ptype].set_active(display)
@@ -5664,7 +5664,7 @@ I hesitate to even allow it's use but at times it's very useful.\nDo you wish to
                         self.widgets[relatedptype].set_model(relatedliststore)
                         self.widgets[relatedptype].set_active(j)
                         self.widgets[relatedptype].handler_unblock(self.data[ptypeblocksignal])
-                else: print "**** WARNING PNCCONF: pintype error in pintypechanged method new ",new,"    pinnumber ",p
+                else: print _("**** WARNING PNCCONF: pintype error in pintypechanged method new "),new,"    pinnumber ",p
 
     def on_mesa_component_value_changed(self, widget,boardnum):
         self.in_mesa_prepare = True
@@ -5696,7 +5696,7 @@ I hesitate to even allow it's use but at times it's very useful.\nDo you wish to
 
     def set_mesa_options(self,boardnum,title,firmware,numofpwmgens,numoftppwmgens,numofstepgens,numofencoders,numofsserialports,numofsserialchannels):
         self.widgets.druid1.set_buttons_sensitive(0,0,1,1)
-        self.pbar.set_text("Setting up Mesa tabs")
+        self.pbar.set_text(_("Setting up Mesa tabs"))
         self.pbar.set_fraction(0)
         self.window.show()
         while gtk.events_pending():
@@ -5747,7 +5747,7 @@ I hesitate to even allow it's use but at times it's very useful.\nDo you wish to
             self.widgets["mesa%dcon9table"% boardnum].show()
 
 
-        self.widgets["mesa%d"%boardnum].set_title("Mesa%d Configuration-Board: %s firmware: %s"% (boardnum,self.data["mesa%d_boardtitle"%boardnum],
+        self.widgets["mesa%d"%boardnum].set_title(_("Mesa%d Configuration-Board: %s firmware: %s")% (boardnum,self.data["mesa%d_boardtitle"%boardnum],
             self.data["mesa%d_currentfirmwaredata"% boardnum][_FIRMWARE]))
 
         temp = "/usr/share/doc/hostmot2-firmware-%s/%s.PIN"% (self.data["mesa%d_currentfirmwaredata"% boardnum][_DIRECTORY],
@@ -5816,7 +5816,7 @@ I hesitate to even allow it's use but at times it's very useful.\nDo you wish to
         subboardname = self.data["mesa%dsserial%d_%dsubboard"% (boardnum, port, channel)]
         if subboardname == "none":return
         self.widgets.druid1.set_buttons_sensitive(0,0,1,1)
-        self.pbar.set_text("Setting up Mesa Smart Serial tabs")
+        self.pbar.set_text(_("Setting up Mesa Smart Serial tabs"))
         self.pbar.set_fraction(0)
         self.window.show()
         while gtk.events_pending():
@@ -6623,7 +6623,7 @@ I hesitate to even allow it's use but at times it's very useful.\nDo you wish to
                     self.widgets[p].set_active_iter(treeiter)
 
                 else:
-                    print "**** WARNING: PNCCONF data to widget: ptype not recognized/match:",dataptype,widgetptype
+                    print _("**** WARNING: PNCCONF data to widget: ptype not recognized/match:"),dataptype,widgetptype
 
     def fill_pintype_model(self):
         # notused

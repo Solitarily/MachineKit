@@ -2385,7 +2385,7 @@ class TclCommands(nf.TclCommands):
     def set_grid_size_custom(*event):
         if vars.metric.get(): unit_str = " " + _("mm")
         else: unit_str = " " + _("in")
-        v = prompt_float("Custom Grid", "Enter grid size",
+        v = prompt_float(_("Custom Grid"), _("Enter grid size"),
                 "", unit_str) or 0
         if v <= 0: return
         if vars.metric.get(): v /= 25.4
