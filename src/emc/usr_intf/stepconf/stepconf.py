@@ -275,6 +275,9 @@ class Data:
         self.ladderhaltype = 0 # no HAL connections specified
         self.ladderconnect = 1 # HAL connections allowed
 
+        self.select_axis = True
+        self.select_gmoccapy = False
+
         self.pin1inv = 0
         self.pin2inv = 0
         self.pin3inv = 0
@@ -1297,7 +1300,7 @@ class StepconfApp:
 
         if axis == "a":
             self.w.testvelunit.set_text(_("deg / s"))
-            self.w.testaccunit.set_text(_("deg / s²"))
+            self.w.testaccunit.set_text(_(u"deg / s²"))
             self.w.testampunit.set_text(_("deg"))
             self.w.testvel.set_increments(1,5)
             self.w.testacc.set_increments(1,5)
@@ -1311,7 +1314,7 @@ class StepconfApp:
             self.w.testamplitude.set_value(10)
         elif self.d.units:
             self.w.testvelunit.set_text(_("mm / s"))
-            self.w.testaccunit.set_text(_("mm / s²"))
+            self.w.testaccunit.set_text(_(u"mm / s²"))
             self.w.testampunit.set_text(_("mm"))
             self.w.testvel.set_increments(1,5)
             self.w.testacc.set_increments(1,5)
@@ -1325,7 +1328,7 @@ class StepconfApp:
             self.w.testamplitude.set_value(15)
         else:
             self.w.testvelunit.set_text(_("in / s"))
-            self.w.testaccunit.set_text(_("in / s²"))
+            self.w.testaccunit.set_text(_(u"in / s²"))
             self.w.testampunit.set_text(_("in"))
             self.w.testvel.set_increments(.1,5)
             self.w.testacc.set_increments(1,5)

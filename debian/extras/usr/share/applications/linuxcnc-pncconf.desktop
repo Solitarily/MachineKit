@@ -1,12 +1,34 @@
 [Desktop Entry]
 Encoding=UTF-8
 Version=
+Name=Machinekit Pncconf Wizard
+Name[de]=Machinekit Pncconf Wizard
+Name[es]=Machinekit Pncconf Wizard
+Name[fi]=Machinekit Pncconf Wizard
+Name[fr]=Machinekit Pncconf Wizard
+Name[hu]=Machinekit Pncconf Wizard
+Name[it]=Machinekit Pncconf Wizard
+Name[ja]=Machinekit Pncconf Wizard
+Name[pl]=Machinekit Pncconf Wizard
+Name[pt]=Machinekit Pncconf Wizard
+Name[pt_BR]=Machinekit Pncconf Wizard
+Name[ro]=Machinekit Pncconf Wizard
+Name[ru]=Machinekit Pncconf Wizard
+Name[sk]=Machinekit Pncconf Wizard
+Name[sr]=Machinekit Pncconf Wizard
+Name[zh_CN]=Machinekit Pncconf 向导
+Name[zh_TW]=Machinekit Pncconf 嚮導
+GenericName=CNC setup software
+GenericName[zh_CN]=CNC 设置软件
+GenericName[zh_TW]=CNC 設置軟件
+Comment=Configuration Wizard For Mesa I/O Cards
+Comment[zh_CN]=Mesa I/O卡 的配置向导
+Comment[zh_TW]=Mesa I/O卡 的配置嚮導
 Type=Application
 Exec=/usr/bin/pncconf
 Icon=machinekiticon
 X-GNOME-DocPath=
 Terminal=false
-Comment=Configuration Wizard For Mesa I/O Cards
 StartupNotify=false
 Categories=X-CNC;
-Name=Machinekit Pncconf Wizard
+

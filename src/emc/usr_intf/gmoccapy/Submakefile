@@ -3,7 +3,7 @@ GMOCCAPY_MODULES = dialogs getiniinfo notification player preferences widgets
 PYTARGETS += ../bin/gmoccapy ../lib/python/gmoccapy/__init__.py $(patsubst %,../lib/python/gmoccapy/%.py,$(GMOCCAPY_MODULES)) \
 	../share/gmoccapy/gmoccapy.glade 
 
-PYI18NSRCS += emc/usr_intf/gmoccapy/gmoccapy.py $(patsubst %,emc/usr_intf/gmoccapy/%.py,$(GMOCCAPY_MODULES)) \
+GMOCCAPY_PYI18NSRCS += emc/usr_intf/gmoccapy/gmoccapy.py $(patsubst %,emc/usr_intf/gmoccapy/%.py,$(GMOCCAPY_MODULES)) \
 	emc/usr_intf/gmoccapy/gmoccapy.glade 
 
 ../lib/python/gmoccapy/__init__.py:
@@ -27,5 +27,9 @@ PYI18NSRCS += emc/usr_intf/gmoccapy/gmoccapy.py $(patsubst %,emc/usr_intf/gmocca
 	$(Q)$(PYTHON) -c 'import sys; compile(open(sys.argv[1]).read(), sys.argv[1], "exec")' $<
 	$(ECHO) Copying python script $(notdir $@)
 	$(Q)(echo '#!$(PYTHON)'; sed '1 { /^#!/d; }' $<) > $@.tmp && chmod +x $@.tmp && mv -f $@.tmp $@
+
+clean: gmoccapy-clean
+gmoccapy-clean:
+	rm -rf ../lib/python/gmoccapy
 
 

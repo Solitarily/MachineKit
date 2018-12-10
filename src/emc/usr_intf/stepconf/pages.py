@@ -305,6 +305,8 @@ class Pages:
         if  not self.w.createconfig.get_active():
            if os.path.exists(os.path.expanduser("~/machinekit/configs/%s/custompanel.xml" % self.d.machinename)):
                 self.w.radiobutton8.set_active(True)
+        self.w.select_axis.set_active(self.d.select_axis)
+        self.w.select_gmoccapy.set_active(self.d.select_gmoccapy)
         self.w.classicladder.set_active(self.d.classicladder)
         self.w.modbus.set_active(self.d.modbus)
         self.w.digitsin.set_value(self.d.digitsin)
@@ -324,6 +326,8 @@ class Pages:
 
     def options_finish(self):
         SIG = self._p
+        self.d.select_axis = self.w.select_axis.get_active()
+        self.d.select_gmoccapy = self.w.select_gmoccapy.get_active()
         self.d.pyvcp = self.w.pyvcp.get_active()
         self.d.classicladder = self.w.classicladder.get_active()
         self.d.modbus = self.w.modbus.get_active()
@@ -615,19 +619,19 @@ class Pages:
         if axis == "a":
             self.w[axis + "screwunits"].set_text(_("degree / rev"))
             self.w[axis + "velunits"].set_text(_("deg / s"))
-            self.w[axis + "accunits"].set_text(_("deg / s²"))
+            self.w[axis + "accunits"].set_text(_(u"deg / s²"))
             self.w[axis + "accdistunits"].set_text(_("deg"))
             self.w[axis + "scaleunits"].set_text(_("Steps / deg"))
         elif self.d.units:
             self.w[axis + "screwunits"].set_text(_("mm / rev"))
             self.w[axis + "velunits"].set_text(_("mm / s"))
-            self.w[axis + "accunits"].set_text(_("mm / s²"))
+            self.w[axis + "accunits"].set_text(_(u"mm / s²"))
             self.w[axis + "accdistunits"].set_text(_("mm"))
             self.w[axis + "scaleunits"].set_text(_("Steps / mm"))
         else:
             self.w[axis + "screwunits"].set_text(_("rev / in"))
             self.w[axis + "velunits"].set_text(_("in / s"))
-            self.w[axis + "accunits"].set_text(_("in / s²"))
+            self.w[axis + "accunits"].set_text(_(u"in / s²"))
             self.w[axis + "accdistunits"].set_text(_("in"))
             self.w[axis + "scaleunits"].set_text(_("Steps / in"))
 

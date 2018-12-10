@@ -1,12 +1,17 @@
 [Desktop Entry]
 Encoding=UTF-8
 Version=
+Name=Machinekit
+GenericName=CNC software
+GenericName[zh_CN]=CNC 软件
+GenericName[zh_TW]=CNC 軟体
+Comment=The Machinekit CNC Machine Controller
+Comment[zh_CN]=Machinekit 数控机床控制器
+Comment[zh_TW]=Machinekit 數控機床控制器
 Type=Application
 Exec=/usr/bin/machinekit
 Icon=machinekiticon
 X-GNOME-DocPath=
 Terminal=false
-Name=Machinekit
-Comment=The Machinekit CNC Machine Controller
 StartupNotify=false
 Categories=X-CNC;
