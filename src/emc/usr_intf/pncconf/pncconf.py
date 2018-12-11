@@ -5022,7 +5022,7 @@ Ok to reset data and start a new configuration?"),False):
                 else: data = prefs.getpref('gtk_theme', 'Follow System Theme', str)
                 model = self.widgets[i].get_model()
                 model.clear()
-                model.append(("Follow System Theme",))
+                model.append((_("Follow System Theme"),))
                 temp = 0
                 names = os.listdir(themedir)
                 names.sort()

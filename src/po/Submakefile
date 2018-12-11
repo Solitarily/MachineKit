@@ -55,7 +55,7 @@ TCLSRCS := \
 	../tcl/ngcgui_app.tcl \
 	../tcl/tooledit.tcl
 
-TOOLSRCS := \
+TOOLI18NSRCS := \
     ../lib/python/gladevcp/iconview.py \
 	../lib/python/gladevcp/offsetpage_widget.py \
 	../lib/python/gladevcp/tooledit_widget.py \
@@ -68,6 +68,12 @@ po/linuxcnc.pot:
 	@(cd ..; $(XGETTEXT) -k_ -o src/$@ `src/po/fixpaths.py -j src $^`)
 	@touch $@
 TARGETS += po/linuxcnc.pot
+
+po/gmoccapy/gmoccapy.pot:
+	$(ECHO) Localizing gmoccapy/gmoccapy.pot
+	(cd ..; $(XGETTEXT) -k_ -o src/$@ `src/po/fixpaths.py -j src $^`)
+	touch $@
+TARGETS += po/gmoccapy/gmoccapy.pot
 
 pofiles: po/linuxcnc.pot
 	set -x; for i in po/*.po; do msgmerge -U $$i po/linuxcnc.pot; done
@@ -116,13 +122,9 @@ po/linuxcnc.pot: emc/motion/control.c emc/motion/command.c emc/motion/motion.c e
     hal/classicladder/vars_access.c \
 
 po/linuxcnc.pot: $(TCLSRCS)
-po/linuxcnc.pot: $(TOOLSRCS)
 po/linuxcnc.pot: $(PYI18NSRCS)
-po/gmoccapy/gmoccapy.pot: $(GMOCCAPY_PYI18NSRCS)
-	$(XGETTEXT) --from-code=UTF-8 --language=Python \
-		--keyword=_ --keyword=N_ \
-		--output=$@ $^
-TARGETS += po/gmoccapy/gmoccapy.pot
+po/linuxcnc.pot: $(TOOLI18NSRCS)
+po/gmoccapy/gmoccapy.pot: $(GMOCCAPYI18NSRCS)
 
 .PHONY: install-locale
 install-locale: $(addprefix $(DESTDIR)$(localedir)/, $(MO_FILES))

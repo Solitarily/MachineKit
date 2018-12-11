@@ -234,7 +234,7 @@ class Data:
         self.highlight_major = False
         self.display_order = (_REL,_DTG,_ABS)
         self.mode_order = (self._MAN,self._MDI,self._AUTO)
-        self.mode_labels = ["Manual Mode","MDI Mode","Auto Mode"]
+        self.mode_labels = [_("Manual Mode"),_("MDI Mode"),_("Auto Mode")]
         self.IPR_mode = False
         self.plot_view = ("p","x","y","y2","z","z2")
         self.task_mode = 0
@@ -931,7 +931,7 @@ class Gscreen:
 
     def init_statusbar(self):
         self.statusbar_id = self.widgets.statusbar1.get_context_id("Statusbar1")
-        self.homed_status_message = self.widgets.statusbar1.push(1,"Ready For Homing")
+        self.homed_status_message = self.widgets.statusbar1.push(1,_("Ready For Homing"))
 
     def init_entry(self):
         return
@@ -974,7 +974,7 @@ class Gscreen:
         if os.path.exists(themedir):
             model = self.widgets.theme_choice.get_model()
             model.clear()
-            model.append(("Follow System Theme",))
+            model.append((_("Follow System Theme"),))
             temp = 0
             names = os.listdir(themedir)
             names.sort()

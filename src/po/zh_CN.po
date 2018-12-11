@@ -968,15 +968,15 @@ msgstr "无效回零配置:非零SEARCH_VEL需要LATCH_VEL"
 
 #: src/emc/motion/homing.c:447
 msgid "Home switch inactive before start of backoff move"
-msgstr "开始退避移动之前，原点开关无效 j=%d"
+msgstr "开始退避移动之前，原点开关无效"
 
 #: src/emc/motion/homing.c:495
 msgid "Home switch active before start of latch move"
-msgstr "开始闩锁移动之前，原点开关有效 j=%d"
+msgstr "开始闩锁移动之前，原点开关有效"
 
 #: src/emc/motion/homing.c:551
 msgid "Home switch inactive before start of latch move"
-msgstr "开始闩锁移动之前，原点开关无效 j=%d"
+msgstr "开始闩锁移动之前，原点开关无效"
 
 #: src/emc/motion/homing.c:797
 #, c-format
@@ -3173,6 +3173,17 @@ msgid ""
 "This software comes with ABSOLUTELY NO GUARANTEE!   \n"
 "For details see the copyright.html file in this directory."
 msgstr ""
+"TkMini\n"
+"\n"
+"用于增强型机床控制器的Tcl/Tk GUI\n"
+"\n"
+"GPL 版权 2003\n"
+"Ray Henry <rehenry@up.net>\n"
+"\n"
+"  3D backplotter by Paul Corner <paul_c@users.sourceforge.net>\n"
+" \n"
+"该软件属于附带，无绝对保证！\n"
+"有关详细信息，请参阅此目录中的copyright.html文件。"
 
 #: tcl/mini.tcl:915
 msgid "Program"
@@ -3184,63 +3195,63 @@ msgstr "信息"
 
 #: tcl/mini.tcl:923
 msgid "Backplot"
-msgstr "路径模拟..."
+msgstr "路径模拟"
 
 #: tcl/mini.tcl:927
 msgid "Offsets"
-msgstr "显示偏移量"
+msgstr "偏移"
 
 #: tcl/mini.tcl:929
 msgid "Tools"
-msgstr ""
+msgstr "刀具"
 
 #: tcl/mini.tcl:960
 msgid "Position Type"
-msgstr "刀具类型"
+msgstr "坐标类型"
 
 #: tcl/mini.tcl:962
 msgid "Tool Info"
-msgstr "**** GMOCCAPY 信息****"
+msgstr "刀具信息"
 
 #: tcl/mini.tcl:964
 msgid "Offset Info"
-msgstr "**** GMOCCAPY 信息****"
+msgstr "偏移信息"
 
 #: tcl/mini.tcl:967
 msgid "Show Restart"
-msgstr "重新启动条目"
+msgstr "显示重启"
 
 #: tcl/mini.tcl:968
 msgid "Hide Restart"
-msgstr "重新启动条目"
+msgstr "隐藏重启"
 
 #: tcl/mini.tcl:970
 msgid "Show Split Right"
-msgstr "半径右补偿"
+msgstr "显示拆分右"
 
 #: tcl/mini.tcl:972
 msgid "Show Mode Full"
-msgstr "显示完整状态(调试信息)"
+msgstr "显示全部"
 
 #: tcl/mini.tcl:974
 msgid "Show Popin Full"
-msgstr "显示完整状态(调试信息)"
+msgstr "显示布满窗口"
 
 #: tcl/mini.tcl:978
 msgid "Actual Position"
-msgstr "显示实际坐标"
+msgstr "实际坐标"
 
 #: tcl/mini.tcl:980
 msgid "Commanded Position"
-msgstr "显示指令坐标"
+msgstr "指令坐标"
 
 #: tcl/mini.tcl:983
 msgid "Machine Position"
-msgstr "显示机床坐标"
+msgstr "机床坐标"
 
 #: tcl/mini.tcl:985
 msgid "Relative Position"
-msgstr "显示相对坐标"
+msgstr "相对坐标"
 
 #: tcl/mini.tcl:988 tcl/tklinuxcnc.tcl:747
 msgid "Calibration..."
@@ -3270,7 +3281,7 @@ msgstr "编辑文件"
 #: tcl/mini.tcl:1000
 #, tcl-format
 msgid "Editor file is %s"
-msgstr "编辑文件是%s"
+msgstr "编辑文件是 %s"
 
 #: tcl/mini.tcl:1001
 msgid "Parameter File"
@@ -3288,7 +3299,7 @@ msgstr "刀具文件"
 #: tcl/mini.tcl:1004
 #, tcl-format
 msgid "Tool file is %s"
-msgstr "刀具文件是%s"
+msgstr "刀具文件是 %s"
 
 #: tcl/mini.tcl:1006
 msgid "Active G Codes"
@@ -3300,7 +3311,7 @@ msgid ""
 "Active codes include; \n"
 "%s"
 msgstr ""
-"有效代码包括; \n"
+"激活指令包括; \n"
 "%s"
 
 #: tcl/mini.tcl:1010 tcl/mini.tcl:2558 tcl/tklinuxcnc.tcl:791
@@ -3343,7 +3354,7 @@ msgstr "工件偏移量:"
 
 #: tcl/mini.tcl:1121
 msgid "start offsets popup here"
-msgstr "在这里打开偏置窗口"
+msgstr "在这里弹出偏移窗口"
 
 #: tcl/mini.tcl:1165
 msgid "start override popup here"
@@ -3355,7 +3366,7 @@ msgstr "进给速率:"
 
 #: tcl/mini.tcl:1180
 msgid "-- MESSAGES --"
-msgstr "--消息--"
+msgstr "-- 消息 --"
 
 #: tcl/mini.tcl:1230
 msgid "toggleView's not doin nothin yet"
@@ -3368,7 +3379,7 @@ msgstr "刀具偏移激活时无法设置为零，因此我发出G49取消它。
 #: tcl/mini.tcl:1346
 #, tcl-format
 msgid "Can't update the var file while machine is in auto and %s."
-msgstr "当机器处于自动和%s时，无法更新var文件。"
+msgstr "当机器处于自动和%s时，无法更新变量文件。"
 
 #: tcl/mini.tcl:1400 tcl/tklinuxcnc.tcl:1227
 msgid "override limits"
@@ -3384,11 +3395,11 @@ msgstr "默认"
 
 #: tcl/mini.tcl:1427
 msgid "Speed:"
-msgstr "速度1:"
+msgstr "速度:"
 
 #: tcl/mini.tcl:1430
 msgid "RAPID"
-msgstr "<b>空程速率</b>"
+msgstr "高速"
 
 #: tcl/mini.tcl:1447 tcl/tklinuxcnc.tcl:1391
 msgid "Set Jog Speed"
@@ -3400,11 +3411,11 @@ msgstr "输入点动速度:"
 
 #: tcl/mini.tcl:1511
 msgid "JOG X +"
-msgstr "点动:"
+msgstr "点动 X +"
 
 #: tcl/mini.tcl:1512
 msgid "JOG X -"
-msgstr "点动:"
+msgstr "点动 X -"
 
 #: tcl/mini.tcl:1516
 msgid "increment"
@@ -3475,7 +3486,7 @@ msgstr "校验"
 
 #: tcl/mini.tcl:1698
 msgid "RESTART LINE"
-msgstr "行号..."
+msgstr "重新启动行"
 
 #: tcl/mini.tcl:1699 src/emc/usr_intf/stepconf/main_page.glade:531
 msgid "Back"
@@ -3662,11 +3673,11 @@ msgstr "写入并加载文件"
 
 #: tcl/mini.tcl:2336
 msgid "Offset By Radius"
-msgstr "将半径设置为："
+msgstr "径向偏移量"
 
 #: tcl/mini.tcl:2337
 msgid "Offset By Length"
-msgstr "刀具长度补偿"
+msgstr "长度偏移量"
 
 #: tcl/mini.tcl:2342
 msgid "Subtract"
@@ -3730,7 +3741,7 @@ msgstr "重做"
 
 #: tcl/mini.tcl:2551
 msgid "Replace..."
-msgstr "替换"
+msgstr "替换..."
 
 #: tcl/mini.tcl:2664
 msgid "Next Number: "
@@ -3827,7 +3838,7 @@ msgstr "向下"
 
 #: tcl/mini.tcl:3124
 msgid "Match case"
-msgstr "相符"
+msgstr "匹配大小写"
 
 #: tcl/mini.tcl:3569
 msgid "rot-x"
@@ -4998,7 +5009,7 @@ msgstr "意外:多个ngcgui启动"
 
 #: tcl/ngcgui_app.tcl:66
 msgid "LinuxCNC"
-msgstr "LinuxCNC校准"
+msgstr ""
 
 #: tcl/ngcgui_app.tcl:67
 msgid "for linuxCNC 2.5.xxx, Do not include tkapp.py in the ini file"
@@ -5458,7 +5469,7 @@ msgstr "激活第四轴"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:190
 msgid "Activate fifth through ninth axis"
-msgstr "激活第一到第九关节"
+msgstr "激活第五到第九轴"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:191
 msgid "Set Feed Override from 0% to 100%"
@@ -5547,7 +5558,7 @@ msgstr "点动第二轴或关节"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:205
 msgid "Pg Up, Pg Dn"
-msgstr "Pg Up, Pg Dn"
+msgstr ""
 
 #: src/emc/usr_intf/axis/scripts/axis.py:205
 msgid "Jog third axis"
@@ -12057,7 +12068,7 @@ msgstr "最大角速度"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6017
 msgid "Axis Geometry"
-msgstr "显示几何"
+msgstr "轴几何学"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6028
 msgid "xyzabc"
@@ -12151,7 +12162,7 @@ msgstr "错误文字颜色"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6677
 msgid "GUI Options"
-msgstr "GUI选项"
+msgstr "GUI 选项"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6708
 msgid "<b>Virtual Control Panel</b>"
@@ -15951,15 +15962,15 @@ msgstr "K字 沒有 G2，G3，G33，G33.1，G76或G87使用它"
 msgid ""
 "L word with no G10, cutter compensation, canned cycle, digital/analog input, "
 "or NURBS code"
-msgstr ""
-"L字，无G10，刀具补偿，固定循环，数字/模拟输入或M98和NURBS代码"
+msgstr "L字，无G10，刀具补偿，固定循环，数字/模拟输入或NURBS代码"
 
 #: src/emc/rs274ngc/interp_check.cc:310
 msgid ""
 "P word with no G2 G3 G4 G10 G64 G5 G5.2 G76 G82 G86 G88 G89 or M50 M51 M52 "
 "M53 M62 M63 M64 M65 M66 or user M code to use it"
 msgstr ""
-"P字，无G2 G3 G4 G10 G64 G5 G5.2 G76 G82 G86 G88 G89或M50 M51 M52 M53 M62 M63 M64 M65 M65 M66 M98或用户M代码使用"
+"P字，无G2 G3 G4 G10 G64 G5 G5.2 G76 G82 G86 G88 G89或M50 M51 M52 M53 M62 M63 "
+"M64 M65 M65 M66或用户M代码使用"
 
 #: src/emc/rs274ngc/interp_check.cc:315
 msgid "P value not an integer with M19 G2 or G3"
@@ -16713,7 +16724,7 @@ msgstr "错误:代码不在范围g54到g593"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:43
 msgid "Bug code not m0 m1 m2 m30 m60"
-msgstr "错误:代码不是m0 m1 m2 m30 m60 m99"
+msgstr "错误:代码不是m0 m1 m2 m30 m60"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:44
 msgid "Bug distance mode not g90 or g91"
@@ -16781,19 +16792,19 @@ msgstr "无法以零进给速率进行探测"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:60
 msgid "Cannot put a b in canned cycle"
-msgstr "在VW平面固定循环中未指定U值"
+msgstr "不能在固定循环中放置B"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:61
 msgid "Cannot put a c in canned cycle"
-msgstr "在VW平面固定循环中未指定U值"
+msgstr "不能在固定循环中放置C"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:62
 msgid "Cannot put an a in canned cycle"
-msgstr "在VW平面固定循环中未指定U值"
+msgstr "不能在固定循环中放置A"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:63
 msgid "Cannot turn cutter radius comp on when on"
-msgstr "打开时无法打开铣刀半径补偿"
+msgstr "打开时不能转动刀具半径"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:64
 msgid "Cannot use axis values with g80"
@@ -17098,7 +17109,7 @@ msgstr "R字，没有使用它的g代码"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:139
 msgid "Slash missing after first atan argument"
-msgstr "在第一次atan论据之后，Slash不见了"
+msgstr "在第一次atan论据之后，反斜杠不见了"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:140
 msgid "Spindle not turning clockwise in g84"
