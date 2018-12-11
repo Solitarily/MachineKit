@@ -52,8 +52,8 @@ msgid ""
 "**** gmoccapy can only handle 4 axis, ****\n"
 "**** but you have given %d through your INI file ****\n"
 msgstr ""
-"**** gmoccapy 只能处理4轴, ****\n"
-"**** 但是您在INI文件里面配置了%d  轴****\n"
+"**** gmoccapy只能处理4轴, ****\n"
+"**** 但是您在INI文件里面配置了%d轴 ****\n"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:774
 msgid ""
@@ -70,11 +70,11 @@ msgstr "%s 轴回零"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:885
 msgid "**** To many increments given in INI File for this screen ****"
-msgstr "**** 在INI文件中为此屏幕提供的许多增量 ****"
+msgstr "**** 在此界面的INI文件中给出的许多增量 ****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:886
 msgid "**** Only the first 10 will be reachable through this screen ****"
-msgstr "**** 只有前10个可以通过此屏幕到达 ****"
+msgstr "**** 只有前10个才能通过此界面访问 ****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:895
 msgid "Continuous"
@@ -82,7 +82,7 @@ msgstr "连续"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:924
 msgid "**** gmoccapy screen 2 found ****"
-msgstr "**** 发现gmoccapy屏幕2****"
+msgstr "**** 发现gmoccapy界面2****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:929
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1055
@@ -97,7 +97,7 @@ msgstr "**** GMOCCAPY 错误****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:930
 msgid "**** screen 2 GLADE ERROR: ****"
-msgstr "**** 屏幕2 GLADE 错误 ****"
+msgstr "**** 界面2 GLADE 错误 ****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:935
 msgid "**** No gmoccapy2.glade file present ****"
@@ -109,7 +109,7 @@ msgstr "**** 嵌入式标签配置无效 ****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:951
 msgid "**** No tabs will be added! ****"
-msgstr "**** 没有标签将被添加！****"
+msgstr "**** 不会添加任何标签!****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:964
 msgid "ERROR, trying to initialize the user tabs or panaels, check for typos"
@@ -125,11 +125,11 @@ msgstr "跟随系统主题"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1100
 msgid "**** audio available! ****"
-msgstr "**** 音频可用！****"
+msgstr "**** 音频可用!****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1103
 msgid "**** no audio available! ****"
-msgstr "**** 没有音频可用！ ****"
+msgstr "**** 没有音频可用! ****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1104
 msgid "**** PYGST libray not installed? ****"
@@ -189,11 +189,11 @@ msgstr "重要警告"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1498
 msgid "ERROR : External ESTOP is set, could not change state!"
-msgstr "错误：外部ESTOP设置，无法更改状态！"
+msgstr "错误:外部ESTOP设置，无法更改状态!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1511
 msgid "ERROR : Could not switch the machine on, is limit switch aktivated?"
-msgstr "错误：无法打开机器，限位开关是否被激活?"
+msgstr "错误:无法打开机器，限位开关是否被激活?"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1581
 msgid "No file loaded"
@@ -201,11 +201,11 @@ msgstr "没有文件加载"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1730
 msgid "It is not possible to change to MDI Mode at the moment"
-msgstr "此时无法更改为MDI模式"
+msgstr "目前无法更改为MDI模式"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1754
 msgid "It is not possible to change to Auto Mode at the moment"
-msgstr "此时无法更改为自动模式"
+msgstr "目前无法更改为自动模式"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1838
 msgid ""
@@ -235,7 +235,7 @@ msgstr "**** 我们在子目录%s中搜索 ****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1851
 msgid "Enter value:"
-msgstr "输入值："
+msgstr "输入值:"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1852
 #, python-format
@@ -250,7 +250,7 @@ msgstr "转换错误"
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3610
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3634
 msgid "Conversion error !"
-msgstr "转换错误！"
+msgstr "转换错误!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:1856
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3299
@@ -258,7 +258,7 @@ msgid ""
 "Please enter only numerical values\n"
 "Values have not been applied"
 msgstr ""
-"请仅输入数值\n"
+"请只输入数字值\n"
 "值未被应用"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:2149
@@ -281,7 +281,7 @@ msgstr ""
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:2201
 #, python-format
 msgid "**** No widget named: %s to sensitize ****"
-msgstr "**** 没有命名为: %s 的小部件****"
+msgstr "**** 没有名为的小部件: %s敏感 ****"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:2366
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:1561
@@ -307,7 +307,7 @@ msgstr "只是为了警告你"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:2810
 msgid "ERROR : No limit switch is active, ignore limits will not be set."
-msgstr "错误：无限位开关被激活，忽略限制将不被设置。"
+msgstr "错误:无限位开关被激活，忽略限制将不被设置。"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:2849
 msgid "INFO:"
@@ -319,7 +319,7 @@ msgstr "未检测到ClassicLadder实时组件"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:2937
 msgid "Something went wrong, we have an unknown spindle widget"
-msgstr "出了点问题，我们有一个未知的主轴部件 {0}"
+msgstr "出了点问题，我们有一个未知的主轴小部件"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3046
 msgid "Do you really want to delete the MDI history?\n"
@@ -348,7 +348,7 @@ msgstr "偏移量%s无法设置，因为未知轴"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3197
 msgid "Wrong offset setting!"
-msgstr "错误的偏移设置！"
+msgstr "错误的偏移设置!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3202
 msgid "Enter value for diameter"
@@ -356,7 +356,7 @@ msgstr "输入直径的值"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3203
 msgid "Set diameter to:"
-msgstr "将直径设置为："
+msgstr "将直径设置为:"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3206
 msgid "Enter value for radius"
@@ -364,7 +364,7 @@ msgstr "输入半径值"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3207
 msgid "Set radius to:"
-msgstr "将半径设置为："
+msgstr "将半径设置为:"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3210
 #, python-format
@@ -386,7 +386,7 @@ msgstr "btn_set_value中的转换错误!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3217
 msgid "Please enter only numerical values. Values have not been applied"
-msgstr "请仅输入数值。 值未被应用"
+msgstr "请仅输入数字值，值未被应用"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3232
 msgid ""
@@ -399,7 +399,7 @@ msgstr "您没有选择要更改的坐标系，所以没有任何改变"
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3658
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3673
 msgid "Important Warning!"
-msgstr "重要警告！"
+msgstr "重要警告!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3284
 msgid "Enter the block height"
@@ -411,7 +411,7 @@ msgstr "从基台测量的座高"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3297
 msgid "Conversion error in btn_block_height"
-msgstr "btn_block_height中的转换错误!"
+msgstr "btn_block_height中的转换错误"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3298
 msgid "Conversion error in btn_block_height!"
@@ -441,11 +441,11 @@ msgstr "手动换刀"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3549
 msgid "Tool Change has been aborted!\n"
-msgstr "刀具更改已中止!\n"
+msgstr "换刀已中止!\n"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3550
 msgid "The old tool will remain set!"
-msgstr "旧刀具将保持设置！"
+msgstr "旧刀具将保持设置!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3570
 msgid "No or more than one tool selected in tool table"
@@ -476,11 +476,11 @@ msgstr "刀具半径补偿打开时，不能对刀!\n"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3587
 msgid "Please emit an G40 before tool touch off"
-msgstr "在刀具对刀前，请发出G40"
+msgstr "在对刀前，请发出G40"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3597
 msgid "Real big error!"
-msgstr "严重错误！"
+msgstr "严重错误!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3598
 msgid ""
@@ -490,11 +490,11 @@ msgstr "你设法来到一个不可能在 on_btn_tool_touchoff 的地方"
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3602
 #, python-format
 msgid "Enter value for axis %s to set:"
-msgstr "输入轴%s 的值进行设置："
+msgstr "输入轴%s的值进行设置:"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3603
 msgid "Set parameter of tool {0:d} and axis {1} to:"
-msgstr "将刀具{0:d} 和轴{1} 的参数设置为："
+msgstr "将刀具{0:d} 和轴{1} 的参数设置为:"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.py:3608
 #, python-format
@@ -747,7 +747,7 @@ msgstr "<b>冷却</b>"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:2285
 msgid "<b>Spindle [rpm]</b>"
-msgstr "<b>主轴[rpm]</b>"
+msgstr "<b>主轴[转速]</b>"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:2363
 msgid "Undo"
@@ -779,7 +779,7 @@ msgid ""
 "  Text:"
 msgstr ""
 "替换\n"
-"内容："
+"内容:"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:2456
 msgid ""
@@ -829,22 +829,22 @@ msgstr "以窗口启动"
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4427
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4944
 msgid "X Pos."
-msgstr "X 位置"
+msgstr "X位置"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:2684
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4438
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4929
 msgid "Y Pos."
-msgstr "Y 位置"
+msgstr "Y位置"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:2699
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4856
 msgid "Width"
-msgstr "宽度"
+msgstr "宽 度"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:2714
 msgid "Height"
-msgstr "高度"
+msgstr "高 度"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:2812
 msgid "hide cursor"
@@ -920,11 +920,11 @@ msgstr "显示DRO按钮"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:3191
 msgid "Homed color"
-msgstr "归零颜色"
+msgstr "回零颜色"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:3205
 msgid "Unhomed color"
-msgstr "离零颜色"
+msgstr "消零颜色"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:3258
 msgid "Size"
@@ -1042,15 +1042,15 @@ msgstr "<b>键盘快捷键</b>"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4035
 msgid "Use unlock code"
-msgstr "使用解锁码"
+msgstr "启用解锁码"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4051
 msgid "Do not use unlock code"
-msgstr "不使用解锁码"
+msgstr "禁用解锁码"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4067
 msgid "Use hal pin to unlock"
-msgstr "使用硬件pin解锁"
+msgstr "使用HAL针脚解锁"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:4088
 msgid "<b>Unlock settings</b>"
@@ -1216,27 +1216,19 @@ msgstr "用户选项卡"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5208
 msgid "Estop the machine"
-msgstr ""
-"机床急停\n"
-"[F1]"
+msgstr "机床急停"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5230
 msgid "Turn the machine on/off"
-msgstr ""
-"打开/关闭机床\n"
-"[F2]"
+msgstr "打开/关闭机床"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5252
 msgid "enter manual mode to jog axis by hand or touch off"
-msgstr ""
-"进入手动模式，点动各轴或对刀\n"
-"[F3]"
+msgstr "进入手动模式，点动各轴或对刀"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5272
 msgid "enter MDI mode to launch g-code commands"
-msgstr ""
-"进入MDI模式启动G代码命令行\n"
-"[F5]"
+msgstr "进入MDI模式启动G代码命令行"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5291
 msgid "enter auto mode to run programs"
@@ -1244,7 +1236,7 @@ msgstr "进入自动模式运行程序"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5309
 msgid "Enter the settings page, the default code is \"123\""
-msgstr "进入设置页面，默认代码为“123”"
+msgstr "进入设置页面，默认密码为“123”"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5331
 msgid "show user tabs"
@@ -1302,7 +1294,7 @@ msgstr "单步运行加载的程序"
 msgid ""
 "run the program from a certain line, attention, that is dangerous, because "
 "the previous lines will not checed!"
-msgstr "从某一行开始运行程序。注意：这是危险的，因为前面的行不会检查！"
+msgstr "从某一行运行程序，注意:这是危险的，因为之前的行不会被检查!"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5733
 msgid ""
@@ -1315,7 +1307,7 @@ msgstr "程序跳段， 当程序段首有”/“并且按下该按钮，则自�
 msgid ""
 "Make optional stops or not. if an M1 is programed and the button is pressed "
 "(is active) the programm will pause if it found a M1"
-msgstr "选择性暂停，如果M1被编程并按下该按钮（有效），则如果找到M1，程序将暂停"
+msgstr "选择性暂停，如果M1被编程并按下该按钮(有效)，则如果找到M1，程序将暂停"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5790
 msgid "Edit the loaded program"
@@ -1339,7 +1331,7 @@ msgstr "Z 轴回零"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:5988
 msgid "Unhome all axis"
-msgstr "全部轴离零"
+msgstr "全部轴消零"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:6024
 msgid "go back to main button list"
@@ -1537,7 +1529,7 @@ msgstr "按编号选择刀具"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:6791
 msgid "change tool with the command M61 Q?, no machine move will be done"
-msgstr "使用M61 Q？命令更换刀具，不会移动机床"
+msgstr "使用M61 Q?指令更换刀具，不会移动机床"
 
 #: src/emc/usr_intf/gmoccapy/gmoccapy.glade:6813
 msgid "change tool to the selected one"

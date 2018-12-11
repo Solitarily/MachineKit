@@ -189,11 +189,11 @@ msgid ""
 "or\n"
 "Click 'Quit' to exit HALSCOPE"
 msgstr ""
-"HALSCOPE使用名为scope_rt的实时组件来采样信号进行显示，\n"
-"目前没有加载，自动加载失败，在halscope启动的终端上可以\n"
-"找到更多的信息，\n"
+"HALSCOPE使用名为scope_rt的实时组件来采样信号以供显示。它当\n"
+"前未加载，尝试自动加载失败。可以在启动halscope的终端中获得更\n"
+"多信息。\n"
 "\n"
-"请执行以下操作之一:\n"
+"请执行下列操作之一:\n"
 "\n"
 "加载组件(使用'halcmd loadrt scope_rt')，然后单击'确定'\n"
 "或\n"
@@ -215,11 +215,11 @@ msgid ""
 "or\n"
 "Click 'Quit' to exit HALSCOPE"
 msgstr ""
-"HALSCOPE实时采样功能必须从HAL线程调用来确定采样率。\n"
+"必须从HAL线程调用HALSCOPE实时采样函数以确定采样率。\n"
 "\n"
 "请执行以下操作之一:\n"
 "\n"
-"选择一个线程名称和倍率，然后点击”确定“。\n"
+"选择一个线程名称和乘数，然后单击“确定”\n"
 "或\n"
 "点击”退出“退出HALSCOPE"
 
@@ -336,13 +336,14 @@ msgid ""
 "or\n"
 "Click 'Quit' to exit HALSCOPE"
 msgstr ""
-"HALSCOPE使用实时HAL线程中的代码对信号进行采样以便显示。 HAL线程没有运行。\n"
-"线程通常由您尝试运行的应用程序启动，或者您可以使用“halcmd start”命令。\n"
+"HALSCOPE使用实时HAL线程中的代码对信号进行采样以供显示。\n"
+"HAL线程未运行。线程通常由您尝试运行的应用程序启动，或者您可\n"
+"以使用'halcmd start'指令。\n"
 "\n"
 "请执行以下操作之一:\n"
 "\n"
 "启动线程，然后单击“确定”\n"
-"要么\n"
+"或\n"
 "点击“退出”退出HALSCOPE"
 
 #: src/hal/utils/scope_horiz.c:798
@@ -814,17 +815,17 @@ msgstr "正在回零时不能离零, 关节 %d"
 #: src/emc/motion/command.c:1368 src/emc/motion/command.c:1391
 #, c-format
 msgid "Cannot unhome while moving, joint %d"
-msgstr "在移动时不能离零, 关节 %d "
+msgstr "在移动时不能消零, 关节 %d "
 
 #: src/emc/motion/command.c:1396
 #, c-format
 msgid "Cannot unhome inactive joint %d"
-msgstr "不能离零未激活的关节 %d"
+msgstr "不能消零未激活的关节 %d"
 
 #: src/emc/motion/command.c:1400
 #, c-format
 msgid "Cannot unhome invalid joint %d (max %d)"
-msgstr "不能离零无效的关节 %d (最大 %d) "
+msgstr "不能消零无效的关节 %d (最大 %d) "
 
 #: src/emc/motion/command.c:1427
 msgid "need to be enabled, in coord mode for probe move"
@@ -875,7 +876,7 @@ msgstr "关节 %d: 补偿值必须增加"
 #: src/emc/motion/command.c:1745
 #, c-format
 msgid "unrecognized command %d"
-msgstr "无法识别的命令 %d"
+msgstr "无法识别的指令 %d"
 
 #: src/emc/motion/motion.c:212
 msgid "MOTION: hal_init() failed\n"
@@ -2669,7 +2670,7 @@ msgstr ""
 
 #: tcl/bin/emcdebug.tcl:195
 msgid "Trajectory level"
-msgstr "路径"
+msgstr "轨迹水平"
 
 #: tcl/bin/emcdebug.tcl:196
 msgid "Interpreter list"
@@ -3016,7 +3017,7 @@ msgstr "保存当前监视列表"
 
 #: tcl/bin/halshow.tcl:581
 msgid "Commands may be tested here but they will NOT be saved"
-msgstr "命令可以在这里测试，但不会被保存"
+msgstr "指令可以在这里测试，但不会被保存"
 
 #: tcl/bin/pickconfig.tcl:96
 msgid ""
@@ -3077,7 +3078,7 @@ msgstr ""
 
 #: tcl/bin/pickconfig.tcl:749
 msgid "Configuration Copied"
-msgstr "打开配置..."
+msgstr "配置已复制"
 
 #: tcl/bin/pickconfig.tcl:749
 #, tcl-format
@@ -3387,7 +3388,7 @@ msgstr "速率限制"
 
 #: tcl/mini.tcl:1405 tcl/tklinuxcnc.tcl:1263
 msgid "home"
-msgstr "原点"
+msgstr "回零"
 
 #: tcl/mini.tcl:1426
 msgid "DEFAULT"
@@ -3650,7 +3651,7 @@ msgid ""
 "control of machine. \n"
 " "
 msgstr ""
-"坐标系统设置 \n"
+"坐标系设置 \n"
 "\n"
 "  单击值以使用键盘进行编辑，按Enter键返回机器的键盘控制。\n"
 " "
@@ -3810,7 +3811,7 @@ msgstr "打印设置"
 
 #: tcl/mini.tcl:2932
 msgid "Print Command: "
-msgstr "打印命令:"
+msgstr "打印指令:"
 
 #: tcl/mini.tcl:3095
 msgid "Find what:"
@@ -3894,7 +3895,7 @@ msgstr "设置运行标记在行　%s?"
 
 #: tcl/tklinuxcnc.tcl:176 tcl/tklinuxcnc.tcl:204
 msgid "untitled"
-msgstr "未命名"
+msgstr "无标题"
 
 #: tcl/tklinuxcnc.tcl:212
 msgid "Load Parameter File"
@@ -3952,7 +3953,7 @@ msgstr ""
 
 #: tcl/tklinuxcnc.tcl:399
 msgid "Set Tool Offset"
-msgstr "设置刀具补偿"
+msgstr "设置刀具偏移"
 
 #: tcl/tklinuxcnc.tcl:404 tcl/tklinuxcnc.tcl:905
 msgid "Tool:"
@@ -4036,7 +4037,7 @@ msgstr "工具"
 
 #: tcl/tklinuxcnc.tcl:763
 msgid "Hal Scope"
-msgstr "HAL 范围"
+msgstr "HAL示波器"
 
 #: tcl/tklinuxcnc.tcl:777
 msgid "Set Coordinates"
@@ -4056,19 +4057,19 @@ msgstr "弹出帮助"
 
 #: tcl/tklinuxcnc.tcl:815
 msgid "Estop on"
-msgstr "急停 开"
+msgstr "急停按下"
 
 #: tcl/tklinuxcnc.tcl:816
 msgid "Estop off"
-msgstr "急停 关"
+msgstr "急停复位"
 
 #: tcl/tklinuxcnc.tcl:818
 msgid "Machine on"
-msgstr "开机"
+msgstr "打开电源"
 
 #: tcl/tklinuxcnc.tcl:819 src/emc/usr_intf/gscreen/gscreen.glade:2452
 msgid "Machine off"
-msgstr "关机"
+msgstr "关闭电源"
 
 #: tcl/tklinuxcnc.tcl:826 src/emc/usr_intf/touchy/touchy.glade:1561
 msgid "Manual"
@@ -4172,15 +4173,15 @@ msgstr "设定主轴转速倍率:"
 
 #: tcl/tklinuxcnc.tcl:1521
 msgid "Linear Jog Speed"
-msgstr "直线点动速度"
+msgstr "线性点动速度"
 
 #: tcl/tklinuxcnc.tcl:1552
 msgid "Angular Jog Speed (deg)/min:"
-msgstr "弯道点动速度(度)/分:"
+msgstr "角度点动速度(度)/分钟:"
 
 #: tcl/tklinuxcnc.tcl:1596
 msgid "Spindle speed Override:"
-msgstr "主轴转速倍率:"
+msgstr "主轴倍率:"
 
 #: tcl/tklinuxcnc.tcl:1642
 msgid "Program: "
@@ -4212,11 +4213,11 @@ msgstr "样式"
 
 #: tcl/tklinuxcnc.tcl:2229 share/axis/tcl/axis.tcl:2031
 msgid "ESTOP"
-msgstr "急停"
+msgstr "急停按下"
 
 #: tcl/tklinuxcnc.tcl:2231 tcl/ngcgui.tcl:2979 share/axis/tcl/axis.tcl:2033
 msgid "ON"
-msgstr "电源开"
+msgstr "电源打开"
 
 #: tcl/tklinuxcnc.tcl:2290
 msgid "LUBE ON"
@@ -5779,7 +5780,7 @@ msgstr "无刀具"
 #: src/emc/usr_intf/axis/scripts/axis.py:854
 #, python-format
 msgid "Tool %(tool)d, offset %(zo)g, diameter %(dia)g"
-msgstr "刀具 %(tool)d, 补偿 %(zo)g, 直径 %(dia)g"
+msgstr "刀具 %(tool)d, 偏移 %(zo)g, 直径 %(dia)g"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:856
 #, python-format
@@ -5974,7 +5975,7 @@ msgstr "rs274ngc 文件"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:2037
 msgid "axis cannot accept remote command while running"
-msgstr "轴运行时不能接受远程命令"
+msgstr "轴运行时不能接受远程指令"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:2098
 msgid "File not Writable:"
@@ -6043,17 +6044,17 @@ msgstr "全部轴回零"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:3089
 msgid "Unhome All Axes"
-msgstr "全部轴离零"
+msgstr "全部轴消零"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:3113
 #, python-format
 msgid "Home Axis _%s"
-msgstr "轴回零 _%s"
+msgstr "_%s 轴回零"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:3115
 #, python-format
 msgid "Unhome Axis _%s"
-msgstr "轴离零_%s   "
+msgstr "_%s 轴消零"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:3282
 msgid "Run from here"
@@ -7128,11 +7129,11 @@ msgstr "半径补偿右，立即"
 
 #: src/emc/usr_intf/touchy/mdi.py:75 src/emc/usr_intf/gscreen/mdi.py:74
 msgid "Tool length offset"
-msgstr "刀具长度补偿"
+msgstr "刀具长度偏移"
 
 #: src/emc/usr_intf/touchy/mdi.py:76 src/emc/usr_intf/gscreen/mdi.py:75
 msgid "Tool length offset immediate"
-msgstr "刀具长度补偿，立即"
+msgstr "刀具长度偏移，立即"
 
 #: src/emc/usr_intf/touchy/mdi.py:77 src/emc/usr_intf/gscreen/mdi.py:76
 msgid "Motion in unoffset coordinates"
@@ -7328,15 +7329,15 @@ msgstr "急停复位"
 #: src/emc/usr_intf/touchy/touchy.glade:459
 #: src/emc/usr_intf/gscreen/gscreen.glade:2442
 msgid "Estop"
-msgstr "急停"
+msgstr "急停按下"
 
 #: src/emc/usr_intf/touchy/touchy.glade:475
 msgid "Machine On"
-msgstr "机床开启"
+msgstr "电源开启"
 
 #: src/emc/usr_intf/touchy/touchy.glade:490
 msgid "Machine Off"
-msgstr "机床关闭"
+msgstr "电源关闭"
 
 #: src/emc/usr_intf/touchy/touchy.glade:531
 msgid "<b>Power</b>"
@@ -7344,7 +7345,7 @@ msgstr "<b>电源</b>"
 
 #: src/emc/usr_intf/touchy/touchy.glade:562
 msgid "Unhome All"
-msgstr "全部离零"
+msgstr "全部消零"
 
 #: src/emc/usr_intf/touchy/touchy.glade:588
 msgid "Home Selected"
@@ -7352,7 +7353,7 @@ msgstr "选择回零"
 
 #: src/emc/usr_intf/touchy/touchy.glade:603
 msgid "Unhome Selected"
-msgstr "选择离零"
+msgstr "选择消零"
 
 #: src/emc/usr_intf/touchy/touchy.glade:625
 msgid "<b>Homing</b>"
@@ -8491,7 +8492,7 @@ msgstr ""
 #: src/emc/usr_intf/stepconf/build_HAL.py:305
 #: src/emc/usr_intf/pncconf/pncconf.py:3170
 msgid "# Load Classicladder without GUI (can reload LADDER GUI in AXIS GUI"
-msgstr "# 在没有GUI的情况下加载梯形图（可以在AXIS GUI中重新加载LADDER GUI"
+msgstr "# 在没有GUI的情况下加载梯形图(可以在AXIS GUI中重新加载LADDER GUI"
 
 #: src/emc/usr_intf/stepconf/build_HAL.py:315
 #: src/emc/usr_intf/pncconf/pncconf.py:3252
@@ -8501,14 +8502,14 @@ msgstr "在这里包含您的PyVCP面板。\n"
 #: src/emc/usr_intf/stepconf/build_HAL.py:324
 #: src/emc/usr_intf/stepconf/build_HAL.py:370
 msgid "# Include your customized HAL commands here"
-msgstr "# 在此处包含您的自定义HAL命令"
+msgstr "# 在此处包含您的自定义HAL指令"
 
 #: src/emc/usr_intf/stepconf/build_HAL.py:325
 msgid ""
 "# The commands in this file are run after the AXIS GUI (including PyVCP "
 "panel) starts"
 msgstr ""
-"# 在AXIS GUI（包括PyVCP面板）启动后运行此文件中的命令"
+"# 在AXIS GUI(包括PyVCP面板)启动后运行此文件中的指令"
 
 #: src/emc/usr_intf/stepconf/build_HAL.py:328
 #: src/emc/usr_intf/pncconf/pncconf.py:3280
@@ -8554,7 +8555,7 @@ msgstr "# 再次运行stepconf时，不会覆盖此文件"
 
 #: src/emc/usr_intf/stepconf/build_HAL.py:412
 msgid "# This file sets up simulated limits/home/spindle encoder hardware."
-msgstr "# 该文件设置模拟限位/归零/主轴编码器硬件。"
+msgstr "# 该文件设置模拟限位/回零/主轴编码器硬件。"
 
 #: src/emc/usr_intf/stepconf/build_HAL.py:413
 msgid "# This is a generated file do not edit."
@@ -9340,7 +9341,7 @@ msgstr "POT启用"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:153
 msgid "POT Direction"
-msgstr "扫描方向"
+msgstr "POT方向"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:154
 msgid "GPIO Input"
@@ -9356,27 +9357,27 @@ msgstr "GPIO输入"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:155
 msgid "Quad Encoder-A"
-msgstr "/编码器脉冲"
+msgstr "Quad编编码器-A"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:155
 msgid "Quad Encoder-B"
-msgstr "/编码器脉冲"
+msgstr "Quad编编码器-B"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:155
 msgid "Quad Encoder-I"
-msgstr "/编码器脉冲"
+msgstr "Quad编编码器-I"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:155
 msgid "Quad Encoder-M"
-msgstr "/编码器脉冲"
+msgstr "Quad编编码器-M"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:156
 msgid "Muxed Encoder 0"
-msgstr "/编码器脉冲"
+msgstr "Quad编编码器-0"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:156
 msgid "Muxed Encoder 1"
-msgstr "/编码器脉冲"
+msgstr "Quad编编码器-1"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:156
 msgid "muxed enc"
@@ -9416,63 +9417,63 @@ msgstr "旋转编码器 5"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:159
 msgid "Step Gen-A"
-msgstr "步骤Nbr"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:159
 msgid "Dir Gen-B"
-msgstr "未使用PWM Gen"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:159
 msgid "Step/Dir Gen-C"
-msgstr "未使用PWM Gen"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:159
 msgid "Step/Dir Gen-D"
-msgstr "未使用PWM Gen"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:160
 msgid "Step/Dir Gen-E"
-msgstr "未使用PWM Gen"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:160
 msgid "Step/dir Gen-F"
-msgstr "未使用PWM Gen"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:161
 msgid "Pulse Width Gen-P"
-msgstr "未使用PWM Gen"
+msgstr "脉冲宽度 Gen-P"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:161
 msgid "Pulse Width Gen-D"
-msgstr "未使用PWM Gen"
+msgstr "脉冲宽度 Gen-D"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:161
 msgid "Pulse Width Gen-E"
-msgstr "未使用PWM Gen"
+msgstr "脉冲宽度 Gen-E"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:162
 msgid "Pulse Density Gen-P"
-msgstr "未使用PWM Gen"
+msgstr "脉冲密度 Gen-P"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:162
 msgid "Pulse Density Gen-D"
-msgstr "未使用PWM Gen"
+msgstr "脉冲密度 Gen-D"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:162
 msgid "Pulse Density Gen-E"
-msgstr "未使用PWM Gen"
+msgstr "脉冲密度 Gen-E"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:163
 msgid "Up/Down Mode -Up"
-msgstr "选择用户模式"
+msgstr "上/下模式 -上"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:163
 msgid "Up/Down Mode-Down"
-msgstr "选择用户模式"
+msgstr "上/下模式 -下"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:163
 msgid "Up/Down Mode-Enable"
-msgstr ""
+msgstr "上/下模式 -使能"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:164
 msgid "Motor Phase A"
@@ -14181,7 +14182,7 @@ msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:66026
 msgid "Include Halui user interface component / commands"
-msgstr "包括Halui用户界面组件/命令"
+msgstr "包括Halui用户界面组件/指令"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:66100
 msgid "Number of digital (bit) in pins:"
@@ -14249,7 +14250,7 @@ msgstr "伺服线程"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:66936
 msgid "Load Command "
-msgstr "加载命令"
+msgstr "加载指令"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:66984
 msgid "Thread Speed"
@@ -14257,11 +14258,11 @@ msgstr "线程速度"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:66994
 msgid "Thread Command"
-msgstr "线程命令"
+msgstr "线程指令"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:67006
 msgid "<b>Custom Components Commands</b>"
-msgstr "<b>自定义组件命令</b>"
+msgstr "<b>自定义组件指令</b>"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:67029
 msgid "Machine configuration complete"
@@ -15044,7 +15045,7 @@ msgstr "**** GSCREEN 信息:速率内部信号呼叫到%s"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:2643
 msgid " Zero Origin"
-msgstr "原点清零"
+msgstr "原点置零"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:2644
 msgid "Offset Origin"
@@ -15142,11 +15143,11 @@ msgstr "不能取消多轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:3204
 msgid "No axis selected to unhome"
-msgstr "未选择要离零的轴"
+msgstr "未选择要消零的轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:3213
 msgid "No axis selected for origin zeroing"
-msgstr "未选择轴进行原点归零"
+msgstr "未选择轴进行原点回零"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:3224
 msgid "No axis selected for origin touch-off"
@@ -15537,7 +15538,7 @@ msgid ""
 "Unhome \n"
 "    All"
 msgstr ""
-"离零 \n"
+"消零 \n"
 "    所有"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2967
@@ -15545,7 +15546,7 @@ msgid ""
 "Unhome\n"
 "   Axis"
 msgstr ""
-"离零\n"
+"消零\n"
 "   轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2979
@@ -15587,7 +15588,7 @@ msgid ""
 "Controls"
 msgstr ""
 "主轴\n"
-"   控制"
+"控制"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3195
 msgid "Open"
@@ -15654,7 +15655,7 @@ msgid ""
 "   Jog\n"
 "Speed"
 msgstr ""
-"   点动\n"
+"  点动\n"
 "速度"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3345
@@ -15662,7 +15663,7 @@ msgid ""
 "      Jog\n"
 "Increments"
 msgstr ""
-"      点动\n"
+"  点动\n"
 "增量"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3361
@@ -15694,7 +15695,7 @@ msgid ""
 "     Pan\n"
 "Horizontal"
 msgstr ""
-"     Pan\n"
+"   Pan\n"
 "水平"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3457
@@ -15755,11 +15756,11 @@ msgstr "计算"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3778
 msgid "Data Entry"
-msgstr "代码输入(MDI)"
+msgstr "数据输入"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3805
 msgid "<b>Calculator Entry</b>"
-msgstr "代码输入(MDI)"
+msgstr "<b>计算器输入</b>"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3894
 msgid "Program Restart"
@@ -15843,7 +15844,7 @@ msgid ""
 "command (%s) cannot be executed until the machine is out of E-stop and "
 "turned on"
 msgstr ""
-"无法执行命令(%s)在机器打开之前"
+"无法执行指令(%s)在机器打开之前"
 
 #: src/emc/task/emctaskmain.cc:1013
 #, c-format
@@ -15881,11 +15882,11 @@ msgstr "模式为AUTO时不能切换模式，解释器不是IDLE"
 
 #: src/emc/task/emctaskmain.cc:2169
 msgid "Can't issue MDI command when not homed"
-msgstr "未回零时无法发出MDI命令"
+msgstr "未回零时无法发出MDI指令"
 
 #: src/emc/task/emctaskmain.cc:2174
 msgid "Must be in MDI mode to issue MDI command"
-msgstr "必须在MDI模式下才能发出MDI命令"
+msgstr "必须在MDI模式下才能发出MDI指令"
 
 #: src/emc/task/emctaskmain.cc:2256
 msgid "Can't run a program when not homed"
@@ -16264,7 +16265,7 @@ msgstr "开启刀具半径补偿后，无法更改退刀模式"
 
 #: src/emc/rs274ngc/interp_convert.cc:3703
 msgid "G10 L1 without offsets has no effect"
-msgstr "无补偿的G10 L1无效"
+msgstr "无偏移的G10 L1无效"
 
 #: src/emc/rs274ngc/interp_convert.cc:3809
 msgid "Q number in G10 is not an integer"
@@ -16344,7 +16345,7 @@ msgstr "使用刀具半径补偿时无法更换刀具"
 
 #: src/emc/rs274ngc/interp_convert.cc:5328
 msgid "Cannot change tool offset with cutter radius compensation on"
-msgstr "使用刀具半径补偿时不能改变刀具偏置"
+msgstr "使用刀具半径补偿时不能改变刀具补偿"
 
 #: src/emc/rs274ngc/interp_queue.cc:694
 #, c-format
@@ -16832,7 +16833,7 @@ msgstr "不能使用两个使用轴值的g代码"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:70
 msgid "Command too long"
-msgstr "命令太长"
+msgstr "指令太长"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:71
 msgid "Current point same as end point of arc"
@@ -17303,7 +17304,7 @@ msgstr "错误:调用堆栈欠载"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:187
 msgid "Unknown control command in o word"
-msgstr "未知控制命令在O字"
+msgstr "未知控制指令在O字"
 
 #: src/emc/rs274ngc/rs274ngc_return.hh:188
 msgid "Too many oword labels"
