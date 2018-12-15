@@ -1189,11 +1189,11 @@ msgid "Okay"
 msgstr "好的"
 
 #: src/hal/classicladder/classicladder_gtk.c:648 tcl/bin/pickconfig.tcl:567
-#: src/emc/usr_intf/axis/scripts/image-to-gcode.py:563
+#: tcl/tooledit.tcl:906 src/emc/usr_intf/axis/scripts/image-to-gcode.py:563
 msgid "Yes"
 msgstr "确定"
 
-#: src/hal/classicladder/classicladder_gtk.c:649
+#: src/hal/classicladder/classicladder_gtk.c:649 tcl/tooledit.tcl:906
 msgid "No"
 msgstr "取消"
 
@@ -1335,6 +1335,7 @@ msgstr "配置硬件发生错误！"
 #: src/hal/classicladder/symbols_gtk.c:121
 #: src/hal/classicladder/symbols_gtk.c:137
 #: src/hal/classicladder/symbols_gtk.c:139 tcl/tklinuxcnc.tcl:2010
+#: tcl/tooledit.tcl:889
 msgid "Error"
 msgstr "错误"
 
@@ -4621,9 +4622,9 @@ msgstr "详细"
 msgid "Finalize Canceled"
 msgstr "已取消"
 
-#: tcl/ngcgui.tcl:2711 tcl/ngcgui.tcl:2867
+#: tcl/ngcgui.tcl:2711 tcl/ngcgui.tcl:2867 tcl/tooledit.tcl:885
 msgid "Dismiss"
-msgstr "解除"
+msgstr "确定"
 
 #: tcl/ngcgui.tcl:2716
 msgid "ngcgui Error"
@@ -5387,6 +5388,23 @@ msgstr "将刀具表重新加载到linuxcnc失败"
 #: lib/python/gladevcp/tooledit_widget.py:306
 msgid "Tool file was modified since it was last read"
 msgstr "刀具文件自上次读取后被修改"
+
+#: lib/python/gladevcp/gladevcp-test.glade:103
+#: lib/python/gladevcp/gladevcp-test.glade:119
+msgid "radiobutton"
+msgstr "单选按钮"
+
+#: lib/python/gladevcp/gladevcp-test.glade:159
+msgid "checkbutton"
+msgstr "检查按钮"
+
+#: lib/python/gladevcp/gladevcp-test.glade:183
+msgid "button"
+msgstr "按钮"
+
+#: lib/python/gladevcp/gladevcp-test.glade:194
+msgid "togglebutton"
+msgstr "切换按钮"
 
 #: lib/python/gladevcp/offsetpage.glade:285
 msgid "Offset"
@@ -8641,6 +8659,8 @@ msgstr "Stepconf - 配置向导"
 #: src/emc/usr_intf/gscreen/gscreen.glade:1342
 #: src/emc/usr_intf/gscreen/gscreen.glade:1360
 #: src/emc/usr_intf/gscreen/gscreen.glade:1378
+#: lib/python/gladevcp/gladevcp-test.glade:80
+#: lib/python/gladevcp/gladevcp-test.glade:94
 msgid "label"
 msgstr "标签"
 
