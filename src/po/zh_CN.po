@@ -9,11 +9,11 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 18:43+0800\n"
 "PO-Revision-Date: 2018-12-07 02:05+0800\n"
-"Last-Translator: davidshore <davidshore@yeah.net>\n"
-"Language-Team:  <davidshore@yeah.net>\n"
-"Language: \n"
+"Last-Translator: David <davidshore@yeah.net>\n"
+"Language-Team: David <davidshore@yeah.net>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Chinese\n"
 "X-Poedit-Country: CHINA\n"
@@ -440,6 +440,7 @@ msgstr "定位"
 
 #: src/hal/utils/scope_vert.c:654 tcl/ngcgui_ttt.tcl:214
 #: src/emc/usr_intf/pncconf/pncconf.glade:64273
+#: lib/python/gladevcp/gladevcp-test.glade:222
 msgid "Scale"
 msgstr "比例"
 
@@ -805,12 +806,12 @@ msgstr "回零序列已在进行中"
 
 #: src/emc/motion/command.c:1352
 msgid "must be in joint mode or disabled to unhome"
-msgstr "必须处于关节模式或禁用才可以离零"
+msgstr "必须处于关节模式或禁用才可以消零"
 
 #: src/emc/motion/command.c:1364 src/emc/motion/command.c:1387
 #, c-format
 msgid "Cannot unhome while homing, joint %d"
-msgstr "正在回零时不能离零, 关节 %d"
+msgstr "正在回零时不能消零, 关节 %d"
 
 #: src/emc/motion/command.c:1368 src/emc/motion/command.c:1391
 #, c-format
@@ -1710,8 +1711,8 @@ msgid "Edit mode..."
 msgstr "编辑模式..."
 
 #: src/hal/classicladder/edit_gtk.c:186 src/hal/classicladder/edit_gtk.c:360
-#: lib/python/gladevcp/tooledit_gtk.glade:289 tcl/mini.tcl:2546
-#: tcl/tooledit.tcl:488
+#: tcl/mini.tcl:2546 tcl/tooledit.tcl:488
+#: lib/python/gladevcp/tooledit_gtk.glade:289
 msgid "Delete"
 msgstr "删除"
 
@@ -1719,8 +1720,8 @@ msgstr "删除"
 msgid "Do you really want to delete the current rung ?"
 msgstr "你真的想删除当前的梯级吗?"
 
-#: src/hal/classicladder/edit_gtk.c:350
-#: lib/python/gladevcp/tooledit_gtk.glade:303 tcl/mini.tcl:2344
+#: src/hal/classicladder/edit_gtk.c:350 tcl/mini.tcl:2344
+#: lib/python/gladevcp/tooledit_gtk.glade:303
 msgid "Add"
 msgstr "添加"
 
@@ -2167,41 +2168,41 @@ msgstr "下移"
 #: src/hal/classicladder/protocol_modbus_master.c:276
 #, c-format
 msgid "ERROR CLASSICLADDER-     MODBUS-EXCEPTION RECEIVED:%X (Excep=%X)\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-     MODBUS-收到的例外:%X (Excep=%X)\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:282
 #, c-format
 msgid ""
 "ERROR CLASSICLADDER-    MODBUS -Function code received from slave was not "
 "the same as requested!\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-    MODBUS -从从站接收的功能代码与请求的不同!\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:366
 #, c-format
 msgid ""
 "INFO CLASSICLADDER-   MODBUS -Echo back from slave #%s is correct "
 "(data=257).\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER-   MODBUS -从从站#%s回发正确(data=257)。\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:369
 #, c-format
 msgid "ERROR CLASSICLADDER-    MODBUS -Echo back from slave #%s is WRONG.\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-    MODBUS -来自从站 #%s is 的回显错误。\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:418
 #, c-format
 msgid "INFO CLASSICLADDER-   MODBUS function code not reconized"
-msgstr ""
+msgstr "信息 CLASSICLADDER-   MODBUS 功能代码未重新配置"
 
 #: src/hal/classicladder/protocol_modbus_master.c:423
 #, c-format
 msgid "INFO CLASSICLADDER-   MODBUS Length we should receive=%d (+3)\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER-   MODBUS 我们应该收到的长度=%d (+3)\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:557
 #, c-format
 msgid "INFO CLASSICLADDER-   Modbus I/O module to send: Lgt=%d <-  "
-msgstr ""
+msgstr "信息 CLASSICLADDER-   要发送 Modbus I/O 模块: Lgt=%d <-  "
 
 #: src/hal/classicladder/protocol_modbus_master.c:560
 #, c-format
@@ -2216,7 +2217,7 @@ msgstr "功能代码 -%X  数据-"
 #: src/hal/classicladder/protocol_modbus_master.c:576
 #, c-format
 msgid "INFO CLASSICLADDER-   Modbus I/O module received: Lgt=%d -> "
-msgstr ""
+msgstr "信息 CLASSICLADDER-  收到的 Modbus I/O 模块: Lgt=%d -> "
 
 #: src/hal/classicladder/protocol_modbus_master.c:579
 #, c-format
@@ -2231,30 +2232,30 @@ msgstr "功能代码-%X ) "
 #: src/hal/classicladder/protocol_modbus_master.c:608
 #, c-format
 msgid "ERROR CLASSICLADDER-   MODBUS CRC error: calc=%x, frame=%x\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-   MODBUS CRC 错误: calc=%x, frame=%x\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:631
 #, c-format
 msgid ""
 "ERROR CLASSICLADDER-   MODBUS-INCORRECT RESPONSE RECEIVED FROM SLAVE!!!\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-   MODBUS-从从站收到不正确的回应!!!\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:637
 #, c-format
 msgid "ERROR CLASSICLADDER-   MODBUS-LOW LEVEL ERROR IN RESPONSE!!!\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-   MODBUS-响应中的低级错误!!!\n"
 
 #: src/hal/classicladder/protocol_modbus_master.c:697
 #, c-format
 msgid ""
 "ERROR CLASSICLADDER--- Variable not defined for MODBUS READ REQUEST mapping "
-msgstr ""
+msgstr "错误 CLASSICLADDER--- 未定义 MODBUS READ REQUEST 映射的变量 "
 
 #: src/hal/classicladder/protocol_modbus_master.c:744
 #, c-format
 msgid ""
 "ERROR CLASSICLADDER--- Variable not defined for MODBUS WRITE REQUEST mapping "
-msgstr ""
+msgstr "错误 CLASSICLADDER--- 未定义 MODBUS WRITE REQUEST 映射的变量 "
 
 #: src/hal/classicladder/serial_linux.c:139
 #, c-format
@@ -2314,18 +2315,18 @@ msgstr "刷新所有串行\n"
 #: src/hal/classicladder/socket_modbus_master.c:110
 #, c-format
 msgid "ERROR CLASSICLADDER-   Failed to create thread I/O modbus master...\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-   无法创建线程 I/O modbus主站...\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:120
 #, c-format
 msgid ""
 "INFO CLASSICLADDER---I/O modbus master Data bits %i Stop bits %i Parity %i\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER---I/O modbus 主站数据 位 %i 停止位 %i 奇偶校验 %i\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:123
 #, c-format
 msgid "INFO CLASSICLADDER---I/O modbus master (%s) init ok !\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER---I/O modbus 主站 (%s) 初始化成功 !\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:123
 msgid "Serial"
@@ -2353,7 +2354,7 @@ msgstr "连接I/O模块...\n"
 #: src/hal/classicladder/socket_modbus_master.c:219
 #, c-format
 msgid "Not able to retrieve IP address in modbus table, huhh?!!!\n"
-msgstr ""
+msgstr "无法在modbus表中检索IP地址!!!\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:224
 #, c-format
@@ -2363,102 +2364,102 @@ msgstr "无法连接到I/O模块\n"
 #: src/hal/classicladder/socket_modbus_master.c:230
 #, c-format
 msgid "Too much IP connections under run...\n"
-msgstr ""
+msgstr "运行中的IP连接过多...\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:247
 #, c-format
 msgid "INFO CLASSICLADDER-   Sending frame to I/O module...\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER-   向I/O模块发送帧...\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:253
 #, c-format
 msgid "ERROR CLASSICLADDER-  FAILED TO SEND ON SOCKET !!!(LgtSend=%d)\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-  无法在SOCKET上发送 !!!(LgtSend=%d)\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:274
 #, c-format
 msgid "INFO CLASSICLADDER-   waiting for slave response...\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER-   等待从属响应...\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:306
 #, c-format
 msgid "INFO CLASSICLADDER---I/O modbus master closed!\n"
-msgstr "梯形图信息---I/O modbus主站关闭!\n"
+msgstr "信息 CLASSICLADDER---I/O modbus主站关闭!\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:355
 #, c-format
 msgid "INFO CLASSICLADDER- after transmit delay now...%i milliseconds\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER- 现在发送延迟后...%i 毫秒\n"
 
 #: src/hal/classicladder/socket_modbus_master.c:365
 #, c-format
 msgid "ERROR CLASSICLADDER-  MODBUS NO RESPONSE (Errs=%d/%d) !?\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER-  MODBUS 无响应 (Errs=%d/%d) !?\n"
 
 #: src/hal/classicladder/socket_server.c:86
 #, c-format
 msgid "INFO CLASSICLADDER--- INIT SOCKET!!!\n"
-msgstr "梯形图信息--- 初始化套字节!!!\n"
+msgstr "信息 CLASSICLADDER--- 初始化套字节!!!\n"
 
 #: src/hal/classicladder/socket_server.c:91
 #, c-format
 msgid "ERROR CLASSICLADDER--- Failed to open socket server...\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER--- 无法打开套接字服务...\n"
 
 #: src/hal/classicladder/socket_server.c:103
 #, c-format
 msgid "ERROR CLASSICLADDER--- Failed to bind socket server...(error=%s)\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER--- 无法绑定套接字服务...(error=%s)\n"
 
 #: src/hal/classicladder/socket_server.c:112
 #, c-format
 msgid "ERROR CLASSICLADDER--- Failed to listen socket server...(error=%s)\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER--- 无法侦听套接字服务...(error=%s)\n"
 
 #: src/hal/classicladder/socket_server.c:130
 #, c-format
 msgid "ERROR CLASSICLADDER--- Failed to create thread socket server...\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER--- 无法创建线程套接字服务...\n"
 
 #: src/hal/classicladder/socket_server.c:135
 #, c-format
 msgid "INFO CLASSICLADDER--- Server socket init ok (modbus - port %d)!\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER--- 套接字服务初始化成功 (modbus - port %d)!\n"
 
 #: src/hal/classicladder/socket_server.c:174
 #, c-format
 msgid "INFO CLASSICLADDER--- MODBUS RESPONSE LGT=%d+%d !\n"
-msgstr "梯形图信息---Modbus响应LGT=%d+%d !\n"
+msgstr "信息 CLASSICLADDER---Modbus响应LGT=%d+%d !\n"
 
 #: src/hal/classicladder/socket_server.c:204
 #, c-format
 msgid "INFO MODBUS SERVER--- SOCKET WAITING...\n"
-msgstr ""
+msgstr "信息 MODBUS SERVER--- SOCKET 等待...\n"
 
 #: src/hal/classicladder/socket_server.c:209
 #, c-format
 msgid "INFO MODBUS SERVER--- SOCKET CLIENT ACCEPTED...\n"
-msgstr ""
+msgstr "信息 MODBUS SERVER--- SOCKET 客户端已被接受...\n"
 
 #: src/hal/classicladder/socket_server.c:215
 #, c-format
 msgid "INFO MODBUS SERVER--- SOCKET RECEIVED=%d !\n"
-msgstr ""
+msgstr "信息 MODBUS SERVER--- SOCKET 收到=%d !\n"
 
 #: src/hal/classicladder/socket_server.c:218
 #, c-format
 msgid "ERROR CLASSICLADDER--- Failed to recv socket server...(error=%s)\n"
-msgstr ""
+msgstr "错误 CLASSICLADDER--- 无法恢复套接字服务...(error=%s)\n"
 
 #: src/hal/classicladder/socket_server.c:232
 #, c-format
 msgid "INFO MODBUS SERVER--- CLOSE SOCK CLIENT.\n"
-msgstr ""
+msgstr "信息 MODBUS SERVER--- 关闭SOCK客户端。\n"
 
 #: src/hal/classicladder/socket_server.c:262
 #, c-format
 msgid "INFO CLASSICLADDER--- Server socket closed!\n"
-msgstr ""
+msgstr "信息 CLASSICLADDER--- 套接字服务已关闭!\n"
 
 #: src/hal/classicladder/spy_vars_gtk.c:180
 msgid "Bit Status Window"
@@ -2693,8 +2694,8 @@ msgid "Exit"
 msgstr "退出"
 
 #: tcl/bin/genedit.tcl:91 tcl/mini.tcl:2517
-#: lib/python/gladevcp/offsetpage.glade:486
 #: src/emc/usr_intf/gscreen/gscreen.glade:2685
+#: lib/python/gladevcp/offsetpage.glade:486
 msgid "Edit"
 msgstr "编辑"
 
@@ -3491,6 +3492,7 @@ msgid "RESTART LINE"
 msgstr "重新启动行"
 
 #: tcl/mini.tcl:1699 src/emc/usr_intf/stepconf/main_page.glade:531
+#: lib/python/gladevcp/tooledit_gtk.glade:239
 msgid "Back"
 msgstr "返回"
 
@@ -3932,7 +3934,7 @@ msgstr ""
 
 #: tcl/tklinuxcnc.tcl:309
 msgid "Motion"
-msgstr "动作"
+msgstr "运动"
 
 #: tcl/tklinuxcnc.tcl:350
 msgid "About TkLinuxCNC"
@@ -5312,156 +5314,6 @@ msgstr "允许的列名称为:%s"
 msgid "Missing filename"
 msgstr "缺少文件名"
 
-#: lib/python/gladevcp/iconview.py:112
-msgid "Move to your home directory"
-msgstr "移动到您的主目录"
-
-#: lib/python/gladevcp/iconview.py:120
-msgid "Move to parent directory"
-msgstr "移动到父目录"
-
-#: lib/python/gladevcp/iconview.py:128
-msgid "Select the previous file"
-msgstr "选择上一个文件"
-
-#: lib/python/gladevcp/iconview.py:136
-msgid "Select the next file"
-msgstr "选择下一个文件"
-
-#: lib/python/gladevcp/iconview.py:160
-msgid "Jump to user defined directory"
-msgstr "跳转到用户定义的目录"
-
-#: lib/python/gladevcp/iconview.py:168
-msgid "select the highlighted file and return the path"
-msgstr "选择突出显示的文件并返回路径"
-
-#: lib/python/gladevcp/iconview.py:176
-msgid "Close without returning a file path"
-msgstr "关闭而不返回文件路径"
-
-#: lib/python/gladevcp/offsetpage_widget.py:142
-msgid ""
-"**** Offsetpage widget ERROR: LINEAR_UNITS not found in INI's TRAJ section"
-msgstr "****偏移页面小部件错误:在INI的TRAJ部分中找不到LINEAR_UNITS"
-
-#: lib/python/gladevcp/offsetpage_widget.py:339
-msgid "offsetpage widget error: unrecognized float input"
-msgstr "偏移页面小部件错误:无法识别的浮点输入"
-
-#: lib/python/gladevcp/offsetpage_widget.py:376
-msgid "offsetpage widget error: MDI call error"
-msgstr "偏移页面窗口小部件错误:MDI调用错误"
-
-#: lib/python/gladevcp/offsetpage_widget.py:395
-msgid "MDI error in offsetpage widget -zero G92"
-msgstr "偏移页面小部件中的MDI错误-置零 G92"
-
-#: lib/python/gladevcp/offsetpage_widget.py:412
-msgid "MDI error in offsetpage widget-zero rotational offset"
-msgstr "偏移页面中的MDI错误 - 置零旋转偏移"
-
-#: lib/python/gladevcp/offsetpage_widget.py:483
-msgid "offsetpage_widget error: cannot select coordinate system"
-msgstr "偏移页面小部件错误：无法选择坐标系"
-
-#: lib/python/gladevcp/tooledit_widget.py:137
-msgid "tooledit_widget error: cannot select tool number"
-msgstr "刀具编辑小部件错误：无法选择刀具编号"
-
-#: lib/python/gladevcp/tooledit_widget.py:158
-msgid "Toolfile does not exist"
-msgstr "刀具文件不存在"
-
-#: lib/python/gladevcp/tooledit_widget.py:186
-msgid "Tooledit widget int error"
-msgstr "刀具编辑小部件初始化错误"
-
-#: lib/python/gladevcp/tooledit_widget.py:191
-msgid "Tooledit_widget float error"
-msgstr "刀具编辑小部件浮动错误"
-
-#: lib/python/gladevcp/tooledit_widget.py:225
-msgid "Reloading tooltable into linuxcnc failed"
-msgstr "将刀具表重新加载到linuxcnc失败"
-
-#: lib/python/gladevcp/tooledit_widget.py:306
-msgid "Tool file was modified since it was last read"
-msgstr "刀具文件自上次读取后被修改"
-
-#: lib/python/gladevcp/gladevcp-test.glade:103
-#: lib/python/gladevcp/gladevcp-test.glade:119
-msgid "radiobutton"
-msgstr "单选按钮"
-
-#: lib/python/gladevcp/gladevcp-test.glade:159
-msgid "checkbutton"
-msgstr "检查按钮"
-
-#: lib/python/gladevcp/gladevcp-test.glade:183
-msgid "button"
-msgstr "按钮"
-
-#: lib/python/gladevcp/gladevcp-test.glade:194
-msgid "togglebutton"
-msgstr "切换按钮"
-
-#: lib/python/gladevcp/offsetpage.glade:285
-msgid "Offset"
-msgstr "偏移"
-
-#: lib/python/gladevcp/offsetpage.glade:425
-msgid "Offset Name"
-msgstr "偏移名称"
-
-#: lib/python/gladevcp/offsetpage.glade:452
-msgid ""
-"Zero\n"
-"G92"
-msgstr ""
-"置零\n"
-"G92"
-
-#: lib/python/gladevcp/offsetpage.glade:466
-msgid ""
-"    Zero\n"
-"Rotational"
-msgstr ""
-"置零\n"
-"旋转"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:63
-msgid "Select"
-msgstr "选择"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:76
-msgid "Tool#"
-msgstr "刀号"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:90
-msgid "Pocket"
-msgstr "刀袋"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:212
-msgid "DIameter"
-msgstr "直径"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:227
-msgid "Front"
-msgstr "刀刃"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:251
-msgid "Orientation"
-msgstr "方向"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:263
-msgid "Comments"
-msgstr "注释"
-
-#: lib/python/gladevcp/tooledit_gtk.glade:317
-msgid "Reload"
-msgstr "刷新"
-
 #: src/emc/usr_intf/axis/scripts/axis.py:183
 msgid "Emergency stop"
 msgstr "急停"
@@ -5557,7 +5409,7 @@ msgstr "为活动轴设置G54偏移"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:200
 msgid "Jog active axis"
-msgstr "点动激活的轴或关节"
+msgstr "点动激活的轴"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:203
 msgid "Left, Right"
@@ -5565,15 +5417,15 @@ msgstr "左, 右"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:203
 msgid "Jog first axis"
-msgstr "点动第一轴或关节"
+msgstr "点动第一軸"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:204
 msgid "Up, Down"
-msgstr "上, 下"
+msgstr "上，下"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:204
 msgid "Jog second axis"
-msgstr "点动第二轴或关节"
+msgstr "点动第二軸"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:205
 msgid "Pg Up, Pg Dn"
@@ -5581,7 +5433,7 @@ msgstr ""
 
 #: src/emc/usr_intf/axis/scripts/axis.py:205
 msgid "Jog third axis"
-msgstr "点动第三轴或关节"
+msgstr "点动第三軸"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:206
 msgid "Shift+above jogs"
@@ -5593,7 +5445,7 @@ msgstr "点动速度"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:207
 msgid "Jog fourth axis"
-msgstr "点动第四轴或关节"
+msgstr "点动第四轴"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:210
 msgid "Toggle between Drag and Rotate mode"
@@ -5836,13 +5688,12 @@ msgstr ""
 #: src/emc/usr_intf/axis/scripts/axis.py:1341
 #: src/emc/usr_intf/axis/scripts/axis.py:2942 share/axis/tcl/axis.tcl:1162
 #: share/axis/tcl/axis.tcl:1164 share/axis/tcl/axis.tcl:2269
-#: src/emc/usr_intf/gmoccapy/gmoccapy.py:895
 msgid "Continuous"
 msgstr "连续"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:1599
 msgid "T    Tool Table"
-msgstr "T    刀具表"
+msgstr "T   刀具表"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:1610
 #: src/emc/usr_intf/axis/scripts/axis.py:1859
@@ -5947,7 +5798,6 @@ msgid "Run Anyway"
 msgstr "继续运行"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:1837
-#: src/emc/usr_intf/gmoccapy/gmoccapy.py:1581
 msgid "No file loaded"
 msgstr "没有载入文件"
 
@@ -5962,6 +5812,8 @@ msgid ""
 "%(size)s bytes\n"
 "%(lines)s gcode lines"
 msgstr ""
+"%(size)s 字节\n"
+"%(lines)s 行G代码"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:1877
 #, python-format
@@ -5976,7 +5828,7 @@ msgstr "%d 秒"
 #: src/emc/usr_intf/axis/scripts/axis.py:1887
 #, python-format
 msgid "%(a)f to %(b)f = %(diff)f %(units)s"
-msgstr ""
+msgstr "%(a)f 到 %(b)f = %(diff)f %(units)s"
 
 #: src/emc/usr_intf/axis/scripts/axis.py:1888
 msgid "G-Code Properties"
@@ -6017,11 +5869,11 @@ msgstr ""
 msgid "Edit-readonly"
 msgstr "阅读"
 
-#: src/emc/usr_intf/axis/scripts/axis.py:2338
+#: src/emc/usr_intf/axis/scripts/axis.py:2388
 msgid "Custom Grid"
 msgstr "自定义网格"
 
-#: src/emc/usr_intf/axis/scripts/axis.py:2338
+#: src/emc/usr_intf/axis/scripts/axis.py:2388
 msgid "Enter grid size"
 msgstr "输入网格大小"
 
@@ -6097,7 +5949,7 @@ msgstr "插入刀具 %d，准备好后点击继续"
 
 #: src/emc/usr_intf/axis/scripts/hal_manualtoolchange.py:39
 msgid "Remove the tool and click continue when ready"
-msgstr "删除该刀具，准备好后单击继续"
+msgstr "移除该刀具，准备好后单击继续"
 
 #: src/emc/usr_intf/axis/scripts/hal_manualtoolchange.py:45
 #: src/emc/usr_intf/touchy/mdi.py:49 src/emc/usr_intf/gscreen/mdi.py:49
@@ -6122,11 +5974,11 @@ msgstr ""
 #: src/emc/usr_intf/axis/scripts/image-to-gcode.py:507
 #, python-format
 msgid "%s: Image to gcode"
-msgstr "%s: 图像到G代码"
+msgstr "%s: 图象到G代码"
 
 #: src/emc/usr_intf/axis/scripts/image-to-gcode.py:508
 msgid "Image to gcode"
-msgstr "图像到G代码"
+msgstr "图象到G代码"
 
 #: src/emc/usr_intf/axis/scripts/image-to-gcode.py:518
 #, python-format
@@ -6227,7 +6079,7 @@ msgstr "完全"
 
 #: src/emc/usr_intf/axis/scripts/image-to-gcode.py:654
 msgid "Invert Image"
-msgstr "反转图案"
+msgstr "反转图象"
 
 #: src/emc/usr_intf/axis/scripts/image-to-gcode.py:655
 msgid "Normalize Image"
@@ -7067,6 +6919,12 @@ msgstr "点动被激活的轴"
 msgid "Temporarily allow jogging outside machine limits [L]"
 msgstr "临时允许机床在极限外点动[L]"
 
+#: src/emc/usr_intf/touchy/touchy.py:144
+#: src/emc/usr_intf/pncconf/pncconf.py:5025
+#: src/emc/usr_intf/gscreen/gscreen.py:977
+msgid "Follow System Theme"
+msgstr "跟随系统主题"
+
 #: src/emc/usr_intf/touchy/mdi.py:47 src/emc/usr_intf/stepconf/stepconf.py:192
 #: src/emc/usr_intf/pncconf/pncconf.py:368 src/emc/usr_intf/gscreen/mdi.py:47
 msgid "Spindle CW"
@@ -7347,13 +7205,15 @@ msgstr "急停复位"
 #: src/emc/usr_intf/touchy/touchy.glade:459
 #: src/emc/usr_intf/gscreen/gscreen.glade:2442
 msgid "Estop"
-msgstr "急停按下"
+msgstr "急停"
 
 #: src/emc/usr_intf/touchy/touchy.glade:475
+#: src/emc/usr_intf/gscreen/gscreen.py:1718
 msgid "Machine On"
 msgstr "电源开启"
 
 #: src/emc/usr_intf/touchy/touchy.glade:490
+#: src/emc/usr_intf/gscreen/gscreen.py:1723
 msgid "Machine Off"
 msgstr "电源关闭"
 
@@ -7380,6 +7240,18 @@ msgstr "<b>回零</b>"
 #: src/emc/usr_intf/touchy/touchy.glade:644
 msgid "Startup"
 msgstr "启动"
+
+#: src/emc/usr_intf/touchy/touchy.glade:660
+msgid "Set Tool"
+msgstr "设置刀具"
+
+#: src/emc/usr_intf/touchy/touchy.glade:675
+msgid "Set Origin"
+msgstr "设置原点"
+
+#: src/emc/usr_intf/touchy/touchy.glade:690
+msgid "Macro"
+msgstr "宏"
 
 #: src/emc/usr_intf/touchy/touchy.glade:727
 msgid "G"
@@ -7728,6 +7600,8 @@ msgid "<b>Display Options</b>"
 msgstr "<b>显示选项</b>"
 
 #: src/emc/usr_intf/touchy/touchy.glade:3286
+#: src/emc/usr_intf/gscreen/gscreen.py:3569
+#: src/emc/usr_intf/gscreen/gscreen.py:3570
 #: src/emc/usr_intf/gscreen/gscreen.glade:3664
 msgid "Inch"
 msgstr "英寸"
@@ -9032,36 +8906,36 @@ msgstr "使用AXIS界面"
 msgid "Use Gmoccapy Screen"
 msgstr "使用Gmoccapy界面"
 
-#: src/emc/usr_intf/stepconf/options.glade:96
+#: src/emc/usr_intf/stepconf/options.glade:97
 msgid "Include Halui user interface component"
 msgstr "包括Halui用户界面组件"
 
-#: src/emc/usr_intf/stepconf/options.glade:148
+#: src/emc/usr_intf/stepconf/options.glade:149
 #: src/emc/usr_intf/pncconf/pncconf.glade:6753
 msgid "Blank program"
 msgstr "空白程序"
 
-#: src/emc/usr_intf/stepconf/options.glade:165
+#: src/emc/usr_intf/stepconf/options.glade:166
 #: src/emc/usr_intf/pncconf/pncconf.glade:6768
 msgid "Spindle speed display  "
 msgstr "主轴转速显示"
 
-#: src/emc/usr_intf/stepconf/options.glade:182
-#: src/emc/usr_intf/stepconf/options.glade:717
+#: src/emc/usr_intf/stepconf/options.glade:183
+#: src/emc/usr_intf/stepconf/options.glade:718
 #: src/emc/usr_intf/pncconf/pncconf.glade:6799
 #: src/emc/usr_intf/pncconf/pncconf.glade:7120
 #: src/emc/usr_intf/pncconf/pncconf.glade:66420
 msgid "Existing custom program"
 msgstr "现有的自定义程序"
 
-#: src/emc/usr_intf/stepconf/options.glade:199
-#: src/emc/usr_intf/stepconf/options.glade:734
+#: src/emc/usr_intf/stepconf/options.glade:200
+#: src/emc/usr_intf/stepconf/options.glade:735
 #: src/emc/usr_intf/pncconf/pncconf.glade:6814
 #: src/emc/usr_intf/pncconf/pncconf.glade:66436
 msgid "Include connections to HAL"
 msgstr "包括连接到HAL"
 
-#: src/emc/usr_intf/stepconf/options.glade:248
+#: src/emc/usr_intf/stepconf/options.glade:249
 #: src/emc/usr_intf/pncconf/pncconf.glade:6997
 #: src/emc/usr_intf/pncconf/pncconf.glade:7545
 msgid ""
@@ -9073,64 +8947,64 @@ msgstr ""
 "示例\n"
 "面板"
 
-#: src/emc/usr_intf/stepconf/options.glade:289
+#: src/emc/usr_intf/stepconf/options.glade:290
 #: src/emc/usr_intf/pncconf/pncconf.glade:7056
 msgid "Include custom PyVCP GUI panel"
 msgstr "包括自定义PyVCP GUI面板"
 
-#: src/emc/usr_intf/stepconf/options.glade:460
+#: src/emc/usr_intf/stepconf/options.glade:461
 #: src/emc/usr_intf/pncconf/pncconf.glade:66172
 msgid " Number of analog (float) out pins:"
 msgstr "模拟输出针脚编号(浮点):"
 
-#: src/emc/usr_intf/stepconf/options.glade:475
+#: src/emc/usr_intf/stepconf/options.glade:476
 #: src/emc/usr_intf/pncconf/pncconf.glade:66157
 msgid " Number of analog (float) in pins:"
 msgstr "模拟输入针脚编号(浮点):"
 
-#: src/emc/usr_intf/stepconf/options.glade:490
+#: src/emc/usr_intf/stepconf/options.glade:491
 #: src/emc/usr_intf/pncconf/pncconf.glade:66142
 msgid " Number of analog (s32) out pins:"
 msgstr "模拟输出针脚编号(s32):"
 
-#: src/emc/usr_intf/stepconf/options.glade:505
+#: src/emc/usr_intf/stepconf/options.glade:506
 #: src/emc/usr_intf/pncconf/pncconf.glade:66126
 msgid " Number of analog (s32) in pins:"
 msgstr "模拟输入针脚编号(s32):"
 
-#: src/emc/usr_intf/stepconf/options.glade:521
+#: src/emc/usr_intf/stepconf/options.glade:522
 msgid "Number of digital  out pins:"
 msgstr "数字输出针脚编号:"
 
-#: src/emc/usr_intf/stepconf/options.glade:552
+#: src/emc/usr_intf/stepconf/options.glade:553
 msgid "Number of digital in pins:"
 msgstr "数字输入针脚编号:"
 
-#: src/emc/usr_intf/stepconf/options.glade:564
+#: src/emc/usr_intf/stepconf/options.glade:565
 msgid "setup number of external pins"
 msgstr "设置外部引脚编号"
 
-#: src/emc/usr_intf/stepconf/options.glade:579
+#: src/emc/usr_intf/stepconf/options.glade:580
 #: src/emc/usr_intf/pncconf/pncconf.glade:66216
 msgid "Include modbus master support"
 msgstr "包括modbus主机支持"
 
-#: src/emc/usr_intf/stepconf/options.glade:671
+#: src/emc/usr_intf/stepconf/options.glade:672
 #: src/emc/usr_intf/pncconf/pncconf.glade:66360
 msgid "Blank ladder program"
 msgstr "空白梯形图程序"
 
-#: src/emc/usr_intf/stepconf/options.glade:684
+#: src/emc/usr_intf/stepconf/options.glade:685
 #: src/emc/usr_intf/pncconf/pncconf.glade:66373
 msgid "Estop ladder program"
 msgstr "急停梯形图程序"
 
-#: src/emc/usr_intf/stepconf/options.glade:700
+#: src/emc/usr_intf/stepconf/options.glade:701
 #: src/emc/usr_intf/pncconf/pncconf.glade:66404
 msgid "Serial modbus program"
 msgstr "串行MODBUS程序"
 
-#: src/emc/usr_intf/stepconf/options.glade:786
+#: src/emc/usr_intf/stepconf/options.glade:787
 #: src/emc/usr_intf/pncconf/pncconf.glade:66470
 msgid ""
 "Edit ladder\n"
@@ -9139,12 +9013,12 @@ msgstr ""
 "编辑梯形图\n"
 "程序"
 
-#: src/emc/usr_intf/stepconf/options.glade:827
+#: src/emc/usr_intf/stepconf/options.glade:828
 #: src/emc/usr_intf/pncconf/pncconf.glade:66506
 msgid "Include _Classicladder PLC"
 msgstr "包括梯形图PLC"
 
-#: src/emc/usr_intf/stepconf/options.glade:848
+#: src/emc/usr_intf/stepconf/options.glade:849
 msgid "_Onscreen prompt for manual tool change"
 msgstr "屏幕提示手动换刀"
 
@@ -9373,7 +9247,7 @@ msgstr "GPIO输出"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:154
 msgid "GPIO O Drain"
-msgstr "GPIO输入"
+msgstr "GPIO O 开漏"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:155
 msgid "Quad Encoder-A"
@@ -9393,11 +9267,11 @@ msgstr "Quad编编码器-M"
 
 #: src/emc/usr_intf/pncconf/pncconf.py:156
 msgid "Muxed Encoder 0"
-msgstr "Quad编编码器-0"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:156
 msgid "Muxed Encoder 1"
-msgstr "Quad编编码器-1"
+msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.py:156
 msgid "muxed enc"
@@ -12163,23 +12037,23 @@ msgstr "GTK主题"
 #: src/emc/usr_intf/pncconf/pncconf.glade:6540
 #: src/emc/usr_intf/gscreen/gscreen.glade:1857
 msgid "Absolute Text Color"
-msgstr "绝对文字颜色"
+msgstr "绝对颜色"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6603
 msgid "Absolute Textcolor"
-msgstr "绝对文字颜色"
+msgstr "绝对颜色"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6616
 msgid "Relative Textcolor"
-msgstr "相对文字颜色"
+msgstr "相对颜色"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6629
 msgid "DTG Textcolor"
-msgstr "DTG 文字颜色"
+msgstr "DTG颜色"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6642
 msgid "Error Textcolor"
-msgstr "错误文字颜色"
+msgstr "错误颜色"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:6677
 msgid "GUI Options"
@@ -14238,7 +14112,7 @@ msgstr "在此页面添加HAL组件。"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:66684
 msgid "<b>Component</b>"
-msgstr "<b>部件</b>"
+msgstr "<b>组件</b>"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:66708
 msgid "<b>number of components</b>"
@@ -14334,11 +14208,11 @@ msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:67137
 msgid "Slow Dac Speed"
-msgstr "选择手动速度"
+msgstr "Dac 低速"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:67153
 msgid "Fast Dac Speed"
-msgstr "选择手动速度"
+msgstr "Dac 高速"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:67247
 msgid "Dac Offset:"
@@ -14363,7 +14237,7 @@ msgstr "启用放大器"
 #: src/emc/usr_intf/pncconf/pncconf.glade:70715
 #: src/emc/usr_intf/pncconf/pncconf.glade:71906
 msgid "Invert Encoder"
-msgstr "反转图案"
+msgstr "反转编码器"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:67328
 #: src/emc/usr_intf/pncconf/pncconf.glade:67448
@@ -14754,8 +14628,6 @@ msgstr "秒"
 #: src/emc/usr_intf/pncconf/pncconf.glade:74076
 msgid "Khz"
 msgstr ""
-"-----取样\n"
-"在 ---- KHz"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:74091
 msgid "Calculated Axis SCALE:"
@@ -14771,11 +14643,23 @@ msgstr ""
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:74180
 msgid "<b>Motion Data</b>"
-msgstr "运转时间"
+msgstr "<b>运动数据</b>"
 
 #: src/emc/usr_intf/pncconf/pncconf.glade:74208
 msgid "gtk-cancel"
 msgstr ""
+
+#: src/emc/usr_intf/gscreen/gscreen.py:237
+msgid "Manual Mode"
+msgstr "手动模式"
+
+#: src/emc/usr_intf/gscreen/gscreen.py:237
+msgid "MDI Mode"
+msgstr "MDI模式"
+
+#: src/emc/usr_intf/gscreen/gscreen.py:237
+msgid "Auto Mode"
+msgstr "自动模式"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:349
 #, python-format
@@ -14925,6 +14809,10 @@ msgstr "INI文件的[DISPLAY]中的CYCLE_TIME太小:默认为100ms"
 msgid "timeout %d"
 msgstr "超时%d"
 
+#: src/emc/usr_intf/gscreen/gscreen.py:934
+msgid "Ready For Homing"
+msgstr "准备回零"
+
 #: src/emc/usr_intf/gscreen/gscreen.py:1001
 msgid ""
 "**** WARNING GSCREEN: could not understand the window geometry info in "
@@ -14934,7 +14822,7 @@ msgstr ""
 
 #: src/emc/usr_intf/gscreen/gscreen.py:1089
 msgid "Control powered up and initialized"
-msgstr "控制启动并初始化"
+msgstr "控制器启动并初始化"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:1264
 msgid "Cycle start pressed in AUTO mode"
@@ -14970,7 +14858,6 @@ msgstr "请更改为刀具# %s，然后单击确定。"
 #: src/emc/usr_intf/gscreen/gscreen.py:3224
 #: src/emc/usr_intf/gscreen/gscreen.py:3230
 #: src/emc/usr_intf/gscreen/gscreen.py:3233
-#: src/emc/usr_intf/gmoccapy/gmoccapy.py:2849
 msgid "INFO:"
 msgstr "信息:"
 
@@ -15063,11 +14950,28 @@ msgstr "启动“Onboard”屏幕键盘程序%s时出错"
 msgid "**** GSCREEN INFO: Overriding internal signal call to %s"
 msgstr "**** GSCREEN 信息:速率内部信号呼叫到%s"
 
+#: src/emc/usr_intf/gscreen/gscreen.py:2638
+msgid ""
+"Zero\n"
+" "
+msgstr ""
+"置零\n"
+" "
+
+#: src/emc/usr_intf/gscreen/gscreen.py:2639
+msgid ""
+"Set At\n"
+" "
+msgstr ""
+"设置为\n"
+" "
+
 #: src/emc/usr_intf/gscreen/gscreen.py:2643
 msgid " Zero Origin"
 msgstr "原点置零"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:2644
+#: src/emc/usr_intf/gscreen/gscreen.glade:2538
 msgid "Offset Origin"
 msgstr "原点偏移"
 
@@ -15104,26 +15008,19 @@ msgid "Dialog error - Is the dialog handler missing from the handler file?"
 msgstr "对话框错误 - 处理程序文件中是否丢失了对话框处理程序?"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:2701
-#: src/emc/usr_intf/gmoccapy/gmoccapy.py:3540
 msgid "Manual Toolchange"
 msgstr "手动换刀"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:2703
-#: src/emc/usr_intf/gmoccapy/dialogs.py:94
-#: src/emc/usr_intf/gmoccapy/dialogs.py:107
-#: src/emc/usr_intf/gmoccapy/dialogs.py:119
 msgid "Operator Message"
-msgstr "操作者信息"
+msgstr "操作员信息"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:2737
 #: src/emc/usr_intf/gscreen/gscreen.py:2741
-#: src/emc/usr_intf/gmoccapy/dialogs.py:155
-#: src/emc/usr_intf/gmoccapy/dialogs.py:159
 msgid "Restart Entry"
 msgstr "重新启动条目"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:2752
-#: src/emc/usr_intf/gmoccapy/dialogs.py:173
 msgid "Enter"
 msgstr "输入"
 
@@ -15163,15 +15060,15 @@ msgstr "不能取消多轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:3204
 msgid "No axis selected to unhome"
-msgstr "未选择要消零的轴"
+msgstr "没有选择要消零的轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:3213
 msgid "No axis selected for origin zeroing"
-msgstr "未选择轴进行原点回零"
+msgstr "没有选择原点归零的轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:3224
 msgid "No axis selected for origin touch-off"
-msgstr "未选择轴进行原点对刀"
+msgstr "没有选择原点对刀的轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.py:3230
 msgid "Can't tool touch-off multiple axes"
@@ -15200,6 +15097,21 @@ msgstr "信息"
 #, python-format
 msgid "%d RPM"
 msgstr ""
+
+#: src/emc/usr_intf/gscreen/gscreen.py:3519
+#, python-format
+msgid "Tool %s     %s"
+msgstr "刀具 %s     %s"
+
+#: src/emc/usr_intf/gscreen/gscreen.py:3562
+#, python-format
+msgid "%s   View -%s               %s"
+msgstr "%s   视图 -%s               %s"
+
+#: src/emc/usr_intf/gscreen/gscreen.py:3567
+#: src/emc/usr_intf/gscreen/gscreen.py:3568
+msgid " mm "
+msgstr " 毫米"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:48
 #: src/emc/usr_intf/gscreen/gscreen.glade:59
@@ -15317,7 +15229,7 @@ msgid ""
 "  Text:"
 msgstr ""
 "搜索\n"
-"  文本:"
+"内容:"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:1766
 msgid "<b>Mode</b>"
@@ -15333,11 +15245,11 @@ msgstr "主题"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:1847
 msgid "Relative Text Color"
-msgstr "相对文本颜色"
+msgstr "相对颜色"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:1895
 msgid "DTG Text Color"
-msgstr "DTG 文本颜色"
+msgstr "DTG颜色"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:1916
 msgid "Warning Audio"
@@ -15357,7 +15269,7 @@ msgstr "启动转速"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2015
 msgid "Metric\n"
-msgstr "测量\n"
+msgstr "单位\n"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2030
 msgid ""
@@ -15373,7 +15285,7 @@ msgid ""
 "   Mode"
 msgstr ""
 "直径\n"
-"   模式"
+"模式"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2062
 #: src/emc/usr_intf/gscreen/gscreen.glade:3096
@@ -15382,7 +15294,7 @@ msgid ""
 "Offsets"
 msgstr ""
 "显示\n"
-"   偏置"
+"偏移"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2079
 msgid ""
@@ -15390,7 +15302,7 @@ msgid ""
 "DTG"
 msgstr ""
 "显示\n"
-"   DTG"
+"DTG"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2096
 msgid ""
@@ -15405,7 +15317,7 @@ msgid ""
 " On M7 Use\n"
 "Aux Coolant"
 msgstr ""
-" 在M7上使用\n"
+"在M7上使用\n"
 "辅助冷却"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2131
@@ -15413,7 +15325,7 @@ msgid ""
 " On M8 Use\n"
 "Aux Coolant"
 msgstr ""
-" 在M8上使用\n"
+"在M8上使用\n"
 "辅助冷却"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2144
@@ -15426,7 +15338,7 @@ msgid ""
 "Notification"
 msgstr ""
 "桌面\n"
-"   通知"
+"通知"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2228
 #: src/emc/usr_intf/gscreen/gscreen.glade:2368
@@ -15475,6 +15387,10 @@ msgid ""
 " Page"
 msgstr "偏移量"
 
+#: src/emc/usr_intf/gscreen/gscreen.glade:2527
+msgid "Zero Origin"
+msgstr "原点置零"
+
 #: src/emc/usr_intf/gscreen/gscreen.glade:2572
 #: src/emc/usr_intf/gscreen/gscreen.glade:2749
 #: src/emc/usr_intf/gscreen/gscreen.glade:3156
@@ -15507,18 +15423,18 @@ msgid ""
 "  View"
 msgstr ""
 "更改 \n"
-"  视图"
+"视图"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2760
 msgid "Homing\n"
-msgstr "原点\n"
+msgstr "回零\n"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2781
 msgid ""
 "Ignore\n"
 "Limits"
 msgstr ""
-"   忽略\n"
+"忽略\n"
 "限制"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2810
@@ -15526,7 +15442,7 @@ msgid ""
 "    Set\n"
 "Override"
 msgstr ""
-"   设置\n"
+"设置\n"
 "倍率"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2824
@@ -15546,7 +15462,7 @@ msgid ""
 "  Launch\n"
 "Keyboard"
 msgstr ""
-"   启动\n"
+"启动\n"
 "键盘"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2868
@@ -15559,7 +15475,7 @@ msgid ""
 "    All"
 msgstr ""
 "消零 \n"
-"    所有"
+"所有"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2967
 msgid ""
@@ -15567,7 +15483,7 @@ msgid ""
 "   Axis"
 msgstr ""
 "消零\n"
-"   轴"
+"轴"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:2979
 #: src/emc/usr_intf/gscreen/gscreen.glade:3084
@@ -15576,7 +15492,7 @@ msgid ""
 "Readout"
 msgstr ""
 "切换\n"
-"   读出"
+"读出"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3004
 msgid ""
@@ -15584,7 +15500,7 @@ msgid ""
 "  Mode"
 msgstr ""
 "点动\n"
-"   模式"
+"模式"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3016
 msgid ""
@@ -15592,7 +15508,7 @@ msgid ""
 "  System"
 msgstr ""
 "坐标\n"
-"   系统"
+"系统"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3060
 msgid ""
@@ -15600,7 +15516,7 @@ msgid ""
 " Tool"
 msgstr ""
 "刀具\n"
-"   索引"
+"索引"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3072
 msgid ""
@@ -15628,7 +15544,7 @@ msgid ""
 "   Stop"
 msgstr ""
 "可选\n"
-"   停止"
+"停止"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3229
 msgid ""
@@ -15651,7 +15567,7 @@ msgid ""
 "   Feed\n"
 "Override"
 msgstr ""
-"   进给\n"
+"进给\n"
 "倍率"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3298
@@ -15667,7 +15583,7 @@ msgid ""
 "  Rapid\n"
 "Override"
 msgstr ""
-"  空程\n"
+"空程\n"
 "倍率"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3332
@@ -15675,7 +15591,7 @@ msgid ""
 "   Jog\n"
 "Speed"
 msgstr ""
-"  点动\n"
+"点动\n"
 "速度"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3345
@@ -15683,7 +15599,7 @@ msgid ""
 "      Jog\n"
 "Increments"
 msgstr ""
-"  点动\n"
+"点动\n"
 "增量"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3361
@@ -15700,7 +15616,7 @@ msgid ""
 "  View"
 msgstr ""
 "更改\n"
-"   视图"
+"视图"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3431
 msgid ""
@@ -15715,7 +15631,7 @@ msgid ""
 "     Pan\n"
 "Horizontal"
 msgstr ""
-"   Pan\n"
+"Pan\n"
 "水平"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3457
@@ -15723,7 +15639,7 @@ msgid ""
 "  Rotate\n"
 "Horiontal"
 msgstr ""
-" 旋转\n"
+"旋转\n"
 "水平"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3470
@@ -15731,7 +15647,7 @@ msgid ""
 " Rotate\n"
 "Vertical"
 msgstr ""
-" 旋转\n"
+"旋转\n"
 "垂直"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3491
@@ -15739,31 +15655,30 @@ msgid ""
 "Search\n"
 "  Bwd"
 msgstr ""
-"搜索\n"
-"  向前"
+"向前\n"
+"搜索"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3503
 msgid ""
 "Search\n"
 "  Fwd"
 msgstr ""
-"搜索\n"
-"  向后"
+"向后\n"
+"搜索"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3561
 msgid ""
 " Reload\n"
 "Program"
 msgstr ""
-" 刷新\n"
-"程序"
+"刷新"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3604
 msgid ""
 " Clear\n"
 "status"
 msgstr ""
-" 清除\n"
+"清除\n"
 "状态"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:3634
@@ -15809,7 +15724,7 @@ msgid ""
 " Line\n"
 "Down"
 msgstr ""
-" 行\n"
+"行\n"
 "向下"
 
 #: src/emc/usr_intf/gscreen/gscreen.glade:4028
@@ -15827,6 +15742,156 @@ msgstr ""
 #: src/emc/usr_intf/gscreen/gscreen2.glade:35
 msgid "screen 2"
 msgstr "屏幕2"
+
+#: lib/python/gladevcp/iconview.py:112
+msgid "Move to your home directory"
+msgstr "移动到您的主目录"
+
+#: lib/python/gladevcp/iconview.py:120
+msgid "Move to parent directory"
+msgstr "移动到父目录"
+
+#: lib/python/gladevcp/iconview.py:128
+msgid "Select the previous file"
+msgstr "选择上一个文件"
+
+#: lib/python/gladevcp/iconview.py:136
+msgid "Select the next file"
+msgstr "选择下一个文件"
+
+#: lib/python/gladevcp/iconview.py:160
+msgid "Jump to user defined directory"
+msgstr "跳转到用户定义的目录"
+
+#: lib/python/gladevcp/iconview.py:168
+msgid "select the highlighted file and return the path"
+msgstr "选择突出显示的文件并返回路径"
+
+#: lib/python/gladevcp/iconview.py:176
+msgid "Close without returning a file path"
+msgstr "关闭而不返回文件路径"
+
+#: lib/python/gladevcp/offsetpage_widget.py:142
+msgid ""
+"**** Offsetpage widget ERROR: LINEAR_UNITS not found in INI's TRAJ section"
+msgstr "****偏移页面小部件错误:在INI的TRAJ部分中找不到LINEAR_UNITS"
+
+#: lib/python/gladevcp/offsetpage_widget.py:339
+msgid "offsetpage widget error: unrecognized float input"
+msgstr "偏移页面小部件错误:无法识别的浮点输入"
+
+#: lib/python/gladevcp/offsetpage_widget.py:376
+msgid "offsetpage widget error: MDI call error"
+msgstr "偏移页面窗口小部件错误:MDI调用错误"
+
+#: lib/python/gladevcp/offsetpage_widget.py:395
+msgid "MDI error in offsetpage widget -zero G92"
+msgstr "偏移页面小部件中的MDI错误-置零 G92"
+
+#: lib/python/gladevcp/offsetpage_widget.py:412
+msgid "MDI error in offsetpage widget-zero rotational offset"
+msgstr "偏移页面中的MDI错误 - 置零旋转偏移"
+
+#: lib/python/gladevcp/offsetpage_widget.py:483
+msgid "offsetpage_widget error: cannot select coordinate system"
+msgstr "偏移页面小部件错误：无法选择坐标系"
+
+#: lib/python/gladevcp/tooledit_widget.py:137
+msgid "tooledit_widget error: cannot select tool number"
+msgstr "刀具编辑小部件错误：无法选择刀具编号"
+
+#: lib/python/gladevcp/tooledit_widget.py:158
+msgid "Toolfile does not exist"
+msgstr "刀具文件不存在"
+
+#: lib/python/gladevcp/tooledit_widget.py:186
+msgid "Tooledit widget int error"
+msgstr "刀具编辑小部件初始化错误"
+
+#: lib/python/gladevcp/tooledit_widget.py:191
+msgid "Tooledit_widget float error"
+msgstr "刀具编辑小部件浮动错误"
+
+#: lib/python/gladevcp/tooledit_widget.py:225
+msgid "Reloading tooltable into linuxcnc failed"
+msgstr "将刀具表重新加载到linuxcnc失败"
+
+#: lib/python/gladevcp/tooledit_widget.py:306
+msgid "Tool file was modified since it was last read"
+msgstr "刀具文件自上次读取后被修改"
+
+#: lib/python/gladevcp/gladevcp-test.glade:103
+#: lib/python/gladevcp/gladevcp-test.glade:119
+msgid "radiobutton"
+msgstr "单选按钮"
+
+#: lib/python/gladevcp/gladevcp-test.glade:159
+msgid "checkbutton"
+msgstr "检查按钮"
+
+#: lib/python/gladevcp/gladevcp-test.glade:183
+msgid "button"
+msgstr "按钮"
+
+#: lib/python/gladevcp/gladevcp-test.glade:194
+msgid "togglebutton"
+msgstr "切换按钮"
+
+#: lib/python/gladevcp/offsetpage.glade:285
+msgid "Offset"
+msgstr "偏移"
+
+#: lib/python/gladevcp/offsetpage.glade:425
+msgid "Offset Name"
+msgstr "偏移名称"
+
+#: lib/python/gladevcp/offsetpage.glade:452
+msgid ""
+"Zero\n"
+"G92"
+msgstr ""
+"置零\n"
+"G92"
+
+#: lib/python/gladevcp/offsetpage.glade:466
+msgid ""
+"    Zero\n"
+"Rotational"
+msgstr ""
+"置零\n"
+"旋转"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:63
+msgid "Select"
+msgstr "选择"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:76
+msgid "Tool#"
+msgstr "刀号"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:90
+msgid "Pocket"
+msgstr "刀袋"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:212
+msgid "DIameter"
+msgstr "直径"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:227
+msgid "Front"
+msgstr "刀刃"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:251
+msgid "Orientation"
+msgstr "方向"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:263
+msgid "Comments"
+msgstr "注释"
+
+#: lib/python/gladevcp/tooledit_gtk.glade:317
+msgid "Reload"
+msgstr "刷新"
 
 #: src/emc/task/emctaskmain.cc:479 src/emc/task/emctaskmain.cc:512
 #, c-format

@@ -1715,12 +1715,12 @@ class Gscreen:
             self.emc.estop_reset(1)
         elif not self.data.machine_on:
             self.emc.machine_on(1)
-            self.widgets.on_label.set_text("Machine On")
+            self.widgets.on_label.set_text(_("Machine On"))
             self.add_alarm_entry(_("Machine powered on"))
         else:
             self.emc.machine_off(1)
             self.emc.estop(1)
-            self.widgets.on_label.set_text("Machine Off")
+            self.widgets.on_label.set_text(_("Machine Off"))
             self.add_alarm_entry(_("Machine Estopped!"))
 
     def on_calc_clicked(self,widget):
@@ -2635,8 +2635,8 @@ class Gscreen:
             self.widgets.mode4.show()
             self.widgets.vmode0.show()
             self.widgets.vmode1.hide()
-            self.widgets.button_zero_origin.set_label("Zero\n ")
-            self.widgets.button_offset_origin.set_label("Set At\n ")
+            self.widgets.button_zero_origin.set_label(_("Zero\n "))
+            self.widgets.button_offset_origin.set_label(_("Set At\n "))
         else:
             self.widgets.mode4.hide()
             self.mode_changed(self.data.mode_order[0])
@@ -3516,7 +3516,7 @@ class Gscreen:
         systemlabel = (_("Machine"),"G54","G55","G56","G57","G58","G59","G59.1","G59.2","G59.3")
         tool = str(self.data.tool_in_spindle)
         if tool == None: tool = "None"
-        self.widgets.system.set_text(("Tool %s     %s"%(tool,systemlabel[self.data.system])))
+        self.widgets.system.set_text((_("Tool %s     %s")%(tool,systemlabel[self.data.system])))
 
     def update_coolant_leds(self):
         # coolant
@@ -3559,15 +3559,15 @@ class Gscreen:
         # Mode / view
         modenames = self.data.mode_labels
         time = strftime("%a, %d %b %Y  %I:%M:%S %P    ", localtime())
-        self.widgets.mode_label.set_label( "%s   View -%s               %s"% (modenames[self.data.mode_order[0]],self.data.plot_view[0],time) )
+        self.widgets.mode_label.set_label( _("%s   View -%s               %s")% (modenames[self.data.mode_order[0]],self.data.plot_view[0],time) )
 
     def update_units_button_label(self):
         label = self.widgets.metric_select.get_label()
         data = self.data.dro_units
-        if data and not label == " mm ":
-            temp = " mm "
-        elif data == 0 and not label == "Inch":
-            temp = "Inch"
+        if data and not label == _(" mm "):
+            temp = _(" mm ")
+        elif data == 0 and not label == _("Inch"):
+            temp = _("Inch")
         else: return
         self.widgets.metric_select.set_label(temp)
 
